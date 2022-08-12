@@ -1,0 +1,60 @@
+@media screen and (min-width: 925px){
+    menu > label{
+        display: none;
+        }
+}
+@media screen and (max-width: 925px){
+    menu{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+    menu ul{
+    margin-top: 10px;
+    display: none;
+    background-color: var(--menu-color);
+    transition: all .2s ease;
+    border-top: #ddd 1px solid;
+    }
+    #close{display: none; float: right;}
+    #mbl[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow:column-reverse;
+    }
+    menu ul li{
+    margin: 5px 0px 8px;
+    width: max-content;
+    }
+    #bar{
+    display: block;
+    }
+    menu > label{
+    display: block;
+    padding-bottom: 35px;
+    }
+    em{display: none;}
+    .theme-switch-wrapper{
+        right: 45px;
+    }
+
+/*Page acceuil*/
+.social > a > img{
+    width: 80px;
+    height: 80px;
+}
+.textabout{
+    font-size: 18px;
+}
+.imgabout{
+    height: 190px;
+}
+.projets{
+    grid-template-columns: repeat(auto-fill,minmax(125px,1fr));
+}
+.projetbox > a > img{
+    width: 125px;
+    height: 125px;
+}
+.projetbox > a > h3{
+    font-size: 18px;
+}
+}

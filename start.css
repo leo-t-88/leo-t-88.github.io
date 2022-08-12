@@ -1,0 +1,37 @@
+@keyframes start-anim {
+    0%{
+transform: scale(2);
+}
+}
+.lanim{
+    height: 175px;
+    z-index: 5;
+    animation: start-anim 0.6s;
+    transition: 0.6s;
+}
+
+.logobox{
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: 0.6s;
+}
+
+noscript{
+    display: table;
+    margin: 35px auto;
+    background-color: rgb(235, 8, 65);
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    width: 97%;
+    padding: 10px 0px 10px 0px;
+    box-shadow: var(--bo-color);
+}
