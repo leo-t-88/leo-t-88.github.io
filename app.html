@@ -3,8 +3,8 @@
     <script>
         if (window.matchMedia('(display-mode: minimal-ui)').matches) {  
             alert("vous etez en pwa")
-        }  else (window.matchMedia('(display-mode: browser)').matches){
-            document.location.href = "https://tropic-music.github.io";
+        }  else if(window.matchMedia('(display-mode: browser)').matches){
+            alert("vous etez en browser")
         }
     </script>
     <style>
