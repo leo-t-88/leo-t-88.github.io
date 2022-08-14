@@ -1,14 +1,14 @@
 <head>
     <title>Pwa detect</title>
     <script>
-        if (window.matchMedia('(display-mode: standalone)').matches) {  
+        if (window.matchMedia('(display-mode: minimal-ui)').matches) {  
             alert("vous etez en pwa")
-        }  else if (window.matchMedia('(display-mode: browser)').matches){
+        }  else{
             document.location.href = "https://tropic-music.github.io";
         }
     </script>
     <style>
-    @media all and (display-mode: standalone) {
+    @media all and (display-mode: minimal-ui) {
   body {
     background-color: yellow;
   }
