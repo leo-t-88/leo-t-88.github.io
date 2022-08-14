@@ -1,2 +1,3 @@
 # leo-t-88.github.io
-Official personnal website of Léo.t88
+(Fr) Site personnel de Léo.t88
+(En) Leo.t88 personal website
