@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Léo.t88 | 404</title>
+<title>Léo.t88</title>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 <script type="text/javascript">
@@ -12,13 +12,19 @@
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="start.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="./favicon.png"/>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <div id="google_translate_element" style="position: fixed; top: 2px; left: 17%; z-index:3;"></div>
 
-<a href="./"><img src="./logo.png" id="logo2"></a>
+<div id="logobox">
+  <a id="linkh"><img src="./logo.png" class="logo1" id="logo1"></a>
+  <div id="meter">
+    <span></span>
+  </div>
+</div>
 <nav class="theme-switch-wrapper">
   <em>Thème :</em>
     <label for="themecheck" class="theme-switch">
@@ -33,24 +39,26 @@
         <i class="fa fa-close" id="close" onclick="menu2()"></i>
     </label>
     <input type="checkbox" id="mbl" role="button">
-      <ul>
-          <li><a href="./file-explorer"><i class="fa fa-folder"></i>File explorer</a></li>
-          <li><a href="./games"><i class="fa fa-gamepad"></i>Jeux</a></li>
-          <li><a href="./tools"><i class="fa fa-wrench"></i>Outils</a></li>
-          <li><a href="./"><i class="fa fa-home"></i>Accueil</a></li>
-        </li>
-      </ul>
+    <ul>
+      <li><a href="./aboutme"><i class="fa fa-info-circle"></i>À propos de moi</a></li>
+      <li class="mobile"><a href="./webos"><i class="fa fa-paint-brush"></i>WebOS</a></li>
+      <li class="mobile"><a href="https://axoliamc.github.io"><i class="fa fa-paint-brush"></i>Axolia</a></li>
+      <li class="mobile"><a href="https://tropic-music.github.io"><i class="fa fa-paint-brush"></i>Tropic Music</a></li>
+      <li class="pc"><a href="./#projets"><i class="fa fa-paint-brush"></i>Création</a></li>
+      <li class="select"><a href="./"><i class="fa fa-home"></i>Accueil</a></li>
+    </li>
+  </ul>
       <div class="menugradient"></div>
 </menu>
 </header>
 <div class="space"></div>
 </head>
 <body>
-  <center><noscript><strong>Javascript est désactiver ! :</strong> Certains projets necessitent Javascript pour fonctionner, veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
-  <center style="margin: 15%">
+  <center><noscript><strong>Javascript est désactivé !</strong> Certains projets et fonctionnalités necessitent Javascript pour fonctionner. Veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
+  <center style="margin: 50p">
     <div class="glitch" data-text="Erreur 404">Erreur 404</div>
-    <strong><p style="color: var(--txt-color);">Oups ! La page que vous cherchez n'existe pas</p></strong>
   </center>
+  <h2 id="copyright" style="position: absolute; bottom: 0px; left: 50%; transform: translate(-50%); display: block;"></h2>
   <style>
     .glitch {
   color: var(--txt-color);
@@ -58,7 +66,7 @@
   font-size: 100px;
   position: relative;
   width: 100%;
-  margin: 15px 0px;
+  margin: 15% 0px;
   transition: all .2s ease;
 }
 @keyframes noise-anim {
@@ -256,44 +264,5 @@
   }
   </style>
 </body>
-
-<footer>
-<div class="footer">
-<div class="footerbox">
-  <strong><h2>Léo.t88</h2></strong>
-  <a href="./#about"><p>A propos</p></a>
-  <a href="mailto:leothomas743@gmail.com" target="_blank"><p>Contacter</p></a>
-  <a href="./#social"><p>Liens sociaux</p></a>
-  <a href="./#projects"><p>Projets</p></a>
-  <a href="./games"><p>Jeux</p></a>
-  <a href="./tools"><p>Outils</p></a>
-  <a href="./files/"><p>Files Explorer</p></a>
-</div>
-
-<div class="footerbox">
-  <strong><h2>Jeux</h2></strong>
-  <a href="https://leo-t-88.github.io/games/play/scratch-wars1"><p>Scratch wars 1</p></a>
-  <a href="https://leo-t-88.github.io/games/play/scratch-wars2"><p>Scratch wars 2</p></a>
-  <a href="https://leo-t-88.github.io/games/play/sneaky-snake"><p>Sneaky snake</p></a>
-</div>
-
-<div class="footerbox">
-  <strong><h2>Outils</h2></strong>
-  <a href="./tools/color-picker/"><p>Color picker</p></a>
-  <a href="./tools/color-converter/"><p>Color converter</p></a>
-  <a href="./tools/color-generator/"><p>Color generator</p></a>
-  <a href="./tools/random/"><p>Random number</p></a>
-  <a href="./tools/time/alarm"><p>Alarme</p></a>
-  <a href="./tools/time/stopwatch"><p>Chronomètre</p></a>
-  <a href="./tools/time/minuteur"><p>Minuteur</p></a>
-</div>
-<div class="footerbox">
-</div>
-</div>
-
-<center>
-  <h2>Tout droit réservé - ©Léo.t88 2022</h2>
-</center>
-</footer>
 <script src="./main.js"></script>
 </html>
