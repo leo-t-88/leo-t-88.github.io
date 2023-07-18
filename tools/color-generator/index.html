@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Generator | Léo.t88</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://tropic-groupe.github.io/files/tropic-tools.png" rel="icon" type="image/png">
+  <link rel="stylesheet" href="./gene.css">
+  <link rel="stylesheet" href="../retour.css">
+  <meta name="description" content="Vous ne trouver pas ou vous n'avez pas d'idée de couleur (pour votre site web/application) color generator vous en génère une aléatoirement, format de couleur généré avec le color generator : Hexadecimal, RGB et HSL."/>
+  <link rel="icon" type="image/png" href="../../favicon.png"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<div id="start"></div>
+<div id="logobox" onclick="retour();" title="Retour à la page d'Accueil">
+    <img src="../../logo.png" id="logo1">
+</div>
+</head>
+
+<body>
+<div class="container" style="font-size: 2em;">
+  <h2>Color generator</h2>
+  <span id="hsl" title="Clic pour copié" onclick="copyToClipboard();"></span>
+  <span id="rgb" title="Clic pour copié" onclick="copyToClipboard();"></span>
+  <span id="hex" title="Clic pour copié" onclick="copyToClipboard();"></span>
+  <button id="btn" class="btn" onclick="newColor()">Nouvelle couleur</button>
+  <span class="sm" id="autoGenCB" ><label class="container-checkbox"><input type="checkbox" onclick="autoGenerate()"><span class="checkmark"></span></label><p>Auto toutes les <input type="number" value="2" min="0.1" max="100" id="timere"></input> s</p></span>
+</div>
+  <script src="../retour.js"></script>
+  <script src="./gene.js"></script>
+</body>
+</html>

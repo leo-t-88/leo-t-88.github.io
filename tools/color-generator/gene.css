@@ -1,0 +1,134 @@
+*{
+  font-family: Avenir, sans-serif;
+}
+
+:root {
+  --bgColor: hsl(0, 100%, 75%);
+  --txtColor: hsl(0, 100%, 5%);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgColor);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+span{
+  color: var(--txtColor);
+  margin: 0.25em 0;
+  user-select: all;
+}
+
+button{
+  font-family: Tahoma, sans-serif;
+  font-size: 0.75em;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  min-height: 46px;
+  background: #fff;
+  color: var(--bgColor);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+button:active {
+  background: #eee;
+  border: 1px solid #eee;
+}
+
+button:focus {
+  outline: none;
+}
+span.sm {
+  user-select: none;
+}
+p{
+  font-size: 20px;
+  margin: 0px;
+  margin-left: 27px;
+}
+
+#timere{
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  border-bottom: 2px #eee solid;
+  width: 40px;
+  padding: 0px;
+  font-size: 17px;
+}
+#timere:focus{
+  outline: 0;
+  border-bottom: 2px #ddd solid;
+}
+
+/*Checkbox*/
+.container-checkbox {
+  display: block;
+  position: relative;
+  margin-bottom: 7px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ddd;
+}
+
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.container-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkbox .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+label{
+  margin-right: 10px;
+}
