@@ -191,6 +191,7 @@ select{background-color: transparent; border: 2px solid #fff; border-radius: 50p
 /*Page d'accueil*/
 body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
     background-position-x: center;
     background-color: #000000;
     background-image: var(--bg-filter);
@@ -288,11 +289,12 @@ strong{
 }
 
 /*Project*/
-
 .projets{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
   width: 100%;
+  transform: translateY(150px);
+  transition: all 1s ease;
 }
 .projetbox{
   display: block;
@@ -323,19 +325,21 @@ strong{
 
 /*Section*/
 .part1{
-  margin: 50px 0px 1016px 0px;
+  margin: 50px 0px 150px 0px;
 }
 .part2{
-  position: fixed;
-  bottom: 0px;
-  height: 0px;
+  display: block;
   width: 100%;
   z-index: 1;
   border-radius: 30px 30px 0px 0px;
-  background-image: url(./effect.gif);
+  background: url(./effect.gif);
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
+  padding: 10px 0px;
+  transition: all 2s ease;
+  opacity: 0;
+  transform: translateY(150px);
 }
 .part2 > h1{
   margin: 20px;
@@ -348,25 +352,13 @@ strong{
   border-radius: 30px;
 }
 .part3{
-  position: fixed;
-  bottom: 0px;
-  height: 0px;
+  display: block;
   width: 100%;
   z-index: 1;
   border-radius: 0px;
   background-color:var(--bg-color);
   transition: all .2s ease;
-}
-.console{
-  display: block;
-  margin-top: 50px;
-  width: 925px;
-  position: relative;
-  left: 50%;
-  transform: translateY(150px);
-  user-select: none !important;
-  opacity: 0;
-  transition: 1s all ease;
+  padding: 10px 0px;
 }
 .console > img{
   height: 384px;
@@ -403,9 +395,7 @@ strong{
 }
 
 .part4{
-  position: fixed;
-  bottom: 0px;
-  height: 0px;
+  display: block;
   width: 100%;
   z-index: 1;
   border-radius: 0px;
@@ -413,8 +403,9 @@ strong{
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   opacity: 1;
-  transition: all .2s ease;
   transform: translateY(0px);
+  padding: 10px 0px 0px;
+  transition: all .5s ease;
 }
 
 .othercen{
@@ -462,11 +453,7 @@ strong{
 }
 
 /*Reveal effect*/
-.console.active{
-  transform: translateX(-50%);
-  opacity: 1;
-}
-.title.active, .description.active{
+.title.active, .description.active, .projets.active, .part2.active{
   transform: translateY(0);
   opacity: 1;
 }
@@ -481,7 +468,7 @@ footer{
   width: 100%;
 }
 .footer{
-  margin: 0px 10px;
+  margin: 0px 10px 0px 0px;
   transition: all .2s ease;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
@@ -490,7 +477,6 @@ footer{
 .footerbox{
   display: block;
   position: relative;
-  opacity: 0.7;
   margin: 10px;
   font-size: 19px;
 }
@@ -512,29 +498,6 @@ color: #666;
 footer > center{
   padding: 15px;
   color: rgb(88, 252, 55);
-}
-
-/*Ancre*/
-#projets{
-  user-select: none;
-  color: transparent;
-  position: absolute;
-  top: 320px;
-  left: 0px;
-}
-#games{
-  user-select: none;
-  color: transparent;
-  position: absolute;
-  top: 610px;
-  left: 0px;
-}
-#others{
-  user-select: none;
-  color: transparent;
-  position: absolute;
-  top: 820px;
-  left: 0px;
 }
 
 /*Loadin*/
@@ -573,6 +536,24 @@ footer > center{
   animation-iteration-count: infinite;
 }
 
+#scrollUp{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    bottom : 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: var(--menu-color);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 50px;
+    transition: all .2s ease;
+    font-size: 20px;
+}
+#scrollUp i{
+  padding: 0px 2px;
+  color: var(--txt-color);
+}
 /*Scrollbar*/
 /*Firefox*/
 body {

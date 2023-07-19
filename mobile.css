@@ -8,6 +8,21 @@
     .mobile{
         display: none;
     }
+    .console{
+        display: block;
+        margin-top: 50px;
+        width: 925px;
+        position: relative;
+        left: 50%;
+        transform: translateY(150px);
+        user-select: none !important;
+        opacity: 0;
+        transition: 1s all ease;
+      }
+      .console.active{
+        transform: translateX(-50%);
+        opacity: 1;
+      }
 }
 @media screen and (max-width: 910px){
     .pc{
@@ -65,7 +80,7 @@
 /*Page acceuil*/
 .social{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(60px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(61px,1fr));
   }
 .social > a > img{
     width: 60px;
@@ -78,11 +93,11 @@
     display: none;
 }
 .projets{
-    grid-template-columns: repeat(auto-fill,minmax(115px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(130px,1fr));
 }
 .projetbox > a > img{
-    width: 115px;
-    height: 115px;
+    width: 120px;
+    height: 120px;
 }
 .projetbox > a > h3{
     font-size: 18px;
@@ -93,6 +108,16 @@
 }
 
 /*Games*/
+.console{
+    display: block;
+    margin-top: 50px;
+    width: 635px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    user-select: none !important;
+    transition: 1s all ease;
+  }
 .console > img {
     height: 265px;
     margin: 0px;
@@ -102,9 +127,6 @@
     border: 12px solid #000;
     height: 240px;
     width: 427px;
-}
-.console {
-    width: 635px;
 }
 .part4 > .title {
     margin: 50px 0px 0px;
@@ -142,35 +164,4 @@
 .description{
     font-size: 18px;
 }
-}
-
-@media screen and (min-height: 900px) and (max-width: 910px){
-    .part1 {
-        margin: 50px 0px 1235px 0px;
-    }
-}
-@media screen and (min-height: 830px) and (max-height: 900px) and (max-width: 910px){
-    .part1 {
-        margin: 50px 0px 1160px 0px;
-    }
-}
-@media screen and (min-height: 800px) and (max-height: 820px) and (max-width: 910px){
-    .part1 {
-        margin: 50px 0px 1130px 0px;
-    }
-}
-@media screen and (min-height: 700px) and (max-height: 800px) and (max-width: 910px){
-    .part1 {
-        margin: 50px 0px 1022px 0px;
-    }
-}
-@media screen and (min-height: 600px) and (max-height: 700px) and (max-width: 910px){
-    .part1 {
-        margin: 50px 0px 963px 0px;
-    }
-}
-@media screen and (min-height:480px) and (max-height: 600px) and (max-width: 910px){
-    .part1{
-        margin: 50px 0px 890px 0px;
-      }
 }

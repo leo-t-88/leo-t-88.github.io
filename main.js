@@ -101,3 +101,34 @@ function reveal() {
       }
     });
   });
+
+// Transition part
+jQuery(function(){
+  $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 1950 ){
+          $('.part2').css('opacity','1');
+          $('.part4').css('background-color','var(--menu-color)');
+          }else if ($(this).scrollTop() > 1600 ){
+              $('.part2').css('opacity','1');
+              $('.part4').css('background-color','var(--bg-color)');
+          }else if ($(this).scrollTop() > 200 ) { 
+              $('.part2').css('opacity','1');
+              $('.part4').css('background-color','var(--bg-color)');
+          } else { 
+            $('.part2').css('opacity','0');
+          }
+      });
+  });
+});
+jQuery(function(){
+  $(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 500 ) { 
+              $('#scrollUp').css('display','block');
+          } else { 
+              $('#scrollUp').css('display','none');
+          }
+      });
+  });
+});

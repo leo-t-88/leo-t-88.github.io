@@ -17,7 +17,7 @@ function part2(){
     setTimeout(part3,600)
 }
 function part3(){
-    document.body.style.overflow = "visible";
+    document.body.style.overflowY = "visible";
     document.getElementById("logo1").classList.add("logo1")
     document.getElementById("start").style.display = 'none';
     document.getElementById("linkh").href = "./";

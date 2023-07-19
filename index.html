@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
 <head>
 <title>Léo.t88</title>
 
@@ -35,124 +35,6 @@
 <link rel="icon" type="image/png" href="./favicon.png"/>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-var ticking = false;
-  // Parallax effect
-function updateParallax(){
-    var scroll = window.scrollY;
-    if ( $(window).width() < 500 && $(window).height() > 500 ) {     
-      if($(this).scrollTop() > 700) {
-          $('.part4').css({
-            'height': ((scroll*6)-3500) + 'px',
-          });
-          $('.part3').css({
-            'height': '0px',
-            'opacity': '0'
-          });
-          $('.part2').css({
-            'height': '0px',
-          });
-        }else if($(this).scrollTop() > 550) {
-          $('.part4').css({
-            'height': ((scroll*6)-3500) + 'px',
-          });
-          $('.part3').css({
-            'height': ((scroll*4)-1600) + 'px',
-            'opacity': '1',
-          });
-          $('.part2').css({
-              'opacity': '1'
-          });
-        }else if($(this).scrollTop() > 350) {
-          $('.part3').css({
-            'height': ((scroll*4)-1600) + 'px',
-          });
-          $('.part2').css({
-              'height': ((scroll*2)-60) + 'px',
-              'opacity': ((scroll) / 300)
-          });
-          $('.part4').css({
-            'height': '0px',
-          });
-        }else if ($(this).scrollTop() > 2) {
-          $('.part2').css({
-              'height': ((scroll*2)-20) + 'px',
-              'opacity': ((scroll) / 300)
-          });
-          $('.part3').css({
-            'height': '0px',
-          });
-          $('.part4').css({
-            'height': '0px',
-          });
-        }else if($(this).scrollTop() < 2) {
-          $('.part2').css({
-              'height': '0px',
-              'opacity': '0'
-          });
-        }
-    }else{
-      if($(this).scrollTop() > 815) {
-          $('.part4').css({
-            'height': ((scroll*6)-4300) + 'px',
-          });
-          $('.part3').css({
-            'height': '0px',
-            'opacity': '0'
-          });
-          $('.part2').css({
-            'height': '0px',
-          });
-        }else if($(this).scrollTop() > 550) {
-          $('.part4').css({
-            'height': ((scroll*6)-4300) + 'px',
-          });
-          $('.part3').css({
-            'height': ((scroll*4)-1800) + 'px',
-            'opacity': '1',
-          });
-          $('.part2').css({
-              'opacity': '1'
-          });
-        }else if($(this).scrollTop() > 450) {
-          $('.part3').css({
-            'height': ((scroll*4)-1800) + 'px',
-          });
-          $('.part2').css({
-              'height': ((scroll*2)-60) + 'px',
-              'opacity': ((scroll) / 300)
-          });
-          $('.part4').css({
-            'height': '0px',
-          });
-        }else if ($(this).scrollTop() > 2) {
-          $('.part2').css({
-              'height': ((scroll*2)-60) + 'px',
-              'opacity': ((scroll) / 300)
-          });
-          $('.part3').css({
-            'height': '0px',
-          });
-          $('.part4').css({
-            'height': '0px',
-          });
-      }else if($(this).scrollTop() < 2) {
-          $('.part2').css({
-              'height': '0px',
-              'opacity': '0'
-          });
-    }
-  }
-    ticking = false;
-};
-// optimisation de la mise a jour affichage css
-$(window).on('scroll', function() {
-  if (!ticking) {
-    window.requestAnimationFrame(updateParallax);
-    ticking = true;
-  }
-});
-</script>
 <div id="start"></div>
 <div id="logobox">
   <a id="linkh"><img src="./logo.png" class="logo1" id="logo1"></a>
@@ -194,6 +76,9 @@ $(window).on('scroll', function() {
 <div class="space"></div>
 </head>
 <body>
+  <div id="scrollUp">
+    <a href="#top"><i class="fa fa-arrow-up"></i></a>
+  </div>
   <section class="part1">
   <center><noscript><strong>Javascript est désactivé !</strong> Certains projets et fonctionnalités necessitent Javascript pour fonctionner. Veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
     <div class="box" id="socials">
@@ -219,15 +104,11 @@ $(window).on('scroll', function() {
     <a href="https://codepen.io/leo-t88" target="_blank"><img src="./files/codepen.png" onmouseover="document.getElementById('social').style.background = 'rgba(0,0,0,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
     <a href="https://scratch.mit.edu/users/LeoW0lfy/" target="_blank"><img src="./files/scratch.png" onmouseover="document.getElementById('social').style.background = 'rgba(255,190,63,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
   </div>
-
-  <h1 id="projets">.</h1>
-  <h1 id="games">.</h1>
-  <h1 id="others">.</h1>
 </section>
 
-<section class="part2">
-  <h1>Mes Projets et Remix</h1>
-    <div class="projets">
+<section class="part2 reveal" id="projets">
+  <h1 class="reveal title">Mes Projets et Remix</h1>
+    <div class="projets reveal">
       <div class="projetbox"><a href="./tools/nbgen/"><img src="./files/projets/number-gen.jpeg"><h3>Nombres Aléatoires</h3></a></div>
       <div class="projetbox"><a href="./tools/pileouface/"><img src="./files/projets/pileouface.jpeg"><h3>Pile ou face</h3></a></div>
       <div class="projetbox"><a href="./tools/color-picker/"><img src="./files/projets/color-picker.jpeg"><h3>Color Picker (RMX)</h3></a></div>
@@ -237,7 +118,7 @@ $(window).on('scroll', function() {
       <div class="projetbox"><a href="./#others"><img src="./files/projets/more.png"><h3>Autres projets</h3></a></div>
     </div>
 </section>
-<section class="part3">
+<section class="part3" id="games">
   <div class="reveal title">
     <img src="./files/games/logojoy.png" height="120px"><h1>Jeux</h1>
   </div>
@@ -254,7 +135,7 @@ $(window).on('scroll', function() {
     </ul>
   </div>
 </section>
-<section class="part4">
+<section class="part4" id="others">
   <div class="reveal title">
     <h1>Autres Projets</h1>
   </div>
@@ -305,10 +186,6 @@ $(window).on('scroll', function() {
   </footer>
 </section>
 </body>
-
-<footer>
-</footer>
-    
 <script src="./start.js"></script>
 <script src="./main.js"></script>
 </html>
