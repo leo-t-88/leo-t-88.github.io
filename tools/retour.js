@@ -15,5 +15,5 @@ function part2(){
 }
 function part3(){
     document.getElementById("logo1").style.height = "1px";
-    setTimeout(function (){document.location = "../../index.html"},500)
+    setTimeout(function (){document.location = "../../"},500)
 }
