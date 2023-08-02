@@ -13,13 +13,14 @@
         margin-top: 50px;
         width: 925px;
         position: relative;
-        left: 50%;
+        left: -50%;
         transform: translateY(150px);
         user-select: none !important;
         opacity: 0;
         transition: 1s all ease;
       }
       .console.active{
+        left: 50%;
         transform: translateX(-50%);
         opacity: 1;
       }
