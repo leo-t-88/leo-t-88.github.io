@@ -332,7 +332,7 @@ strong{
   width: 100%;
   z-index: 1;
   border-radius: 30px 30px 0px 0px;
-  background: url(./effect.gif);
+  background: url(./colorbg.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
@@ -360,9 +360,37 @@ strong{
   transition: all .2s ease;
   padding: 10px 0px;
 }
-.console > img{
+.homebtn{
+  position: absolute;
+  right: 77px;
+  bottom: 95px;
+  height: 33px;
+  width: 33px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.homebtn:hover{
+  transform: scale(1.05);
+}
+.joycon{
   height: 384px;
   margin: 0px;
+}
+.console{
+  display: block;
+  margin-top: 50px;
+  width: 925px;
+  position: relative;
+  left: -50%;
+  transform: translateY(150px);
+  user-select: none !important;
+  opacity: 0;
+  transition: 1s all ease;
+}
+.console.active{
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
 }
 .console > iframe{
   margin: 0px;
@@ -534,6 +562,24 @@ footer > center{
   animation-timing-function: ease-out;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
+}
+#loadnow{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}
+.loadnow{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.loadnow:hover{
+  color: #A8FFCA;
 }
 
 #scrollUp{

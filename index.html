@@ -41,6 +41,10 @@
   <div id="meter">
     <span></span>
   </div>
+  <div id="loadnow">
+    <p>Chargement... long ?</p>
+    <p class="loadnow" onclick="start()">Cliqué ici pour afficher la page</p>
+  </div>
 </div>
 <script>document.getElementById("start").style.display = "block"; document.getElementById("logo1").style.display = "none";</script>
 
@@ -123,15 +127,16 @@
     <img src="./files/games/logojoy.png" height="120px"><h1>Jeux</h1>
   </div>
   <div class="reveal console">
-    <img src="./files/games/joyconL.png">
-    <iframe src="./games.html"></iframe>
-    <img src="./files/games/joyconR.png">
+    <img class="joycon" src="./files/games/joyconL.png">
+    <iframe src="./games.html" id="switchemu"></iframe>
+    <img class="joycon" src="./files/games/joyconR.png">
+    <img src="./files/games/homebtn.png" class="homebtn" onclick="document.getElementById('switchemu').src = './games.html'" title="Retour Accueil">
   </div>
   <div class="reveal description">
     <ul>
      <li>Les jeux sont en 720p 30fps [sauf remix (RMX)]</li>
      <li>Crée avec <a href="https://github.com/sheepTester/scratch-gui">E羊icques</a> une version modifié de scratch 3 version web et open source</li>
-     <li>Converti pour le web à partir du porjet open source <a href="https://github.com/sheepTester/htmlifier">HTMLifier</a></li>
+     <li>Converti pour le web à partir du porjet open source <a href="https://packager.turbowarp.org/">Turbo packager</a> (<a href="https://github.com/sheepTester/htmlifier">HTMLifier</a> pour les rmx)</li>
     </ul>
   </div>
 </section>

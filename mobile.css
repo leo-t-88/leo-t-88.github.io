@@ -8,22 +8,6 @@
     .mobile{
         display: none;
     }
-    .console{
-        display: block;
-        margin-top: 50px;
-        width: 925px;
-        position: relative;
-        left: -50%;
-        transform: translateY(150px);
-        user-select: none !important;
-        opacity: 0;
-        transition: 1s all ease;
-      }
-      .console.active{
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 1;
-      }
 }
 @media screen and (max-width: 910px){
     .pc{
@@ -109,17 +93,7 @@
 }
 
 /*Games*/
-.console{
-    display: block;
-    margin-top: 50px;
-    width: 635px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    user-select: none !important;
-    transition: 1s all ease;
-  }
-.console > img {
+.joycon{
     height: 265px;
     margin: 0px;
 }
@@ -145,11 +119,17 @@
     height: 75px;
     padding-right: 10px;
   }
+  .homebtn{
+    right: 54px;
+    bottom: 66px;
+    height: 23px;
+    width: 23px;
+  }
 }
 
 @media screen and (max-width:650px) {
     /*Games*/
-.console > img {
+.joycon{
     height: 155px;
     margin: 0px;
 }
@@ -165,4 +145,14 @@
 .description{
     font-size: 18px;
 }
+#loadnow{
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.homebtn{
+    right: 30px;
+    bottom: 40px;
+    height: 14px;
+    width: 14px;
+  }
 }

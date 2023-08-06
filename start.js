@@ -5,6 +5,9 @@ var load = 0
 
 window.onload = function(){load = 1; document.getElementById("meter").style.display = "none";setTimeout(start, 300)}
 function start() {
+    document.getElementById("loadnow").style.display = "none";
+    document.getElementById("meter").style.display = "none";
+    document.getElementById("loadnow").style.opacity = "0";
     document.getElementById("logo1").style.display = "block";
     document.getElementById("logo1").classList.add("lanim");
     setTimeout(part2,650)
@@ -28,4 +31,7 @@ setTimeout(function (){
     if(load === 0){
         document.getElementById("meter").style.display = "block";
     }
-}, 1000)
+    setTimeout(function (){
+        document.getElementById("loadnow").style.opacity = "1";
+    }, 3000)
+}, 3000)
