@@ -148,4 +148,8 @@ button:active{
 .pcgen{
     width: 90%;
 }
+#pfimg {
+    margin: 40px 50px 5px 50px;
+    height: 100px;
+}
 }
