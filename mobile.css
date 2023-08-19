@@ -103,6 +103,9 @@
     height: 240px;
     width: 427px;
 }
+.console {
+    width: 635px;
+}
 .part4 > .title {
     margin: 50px 0px 0px;
     font-size: 30px;
