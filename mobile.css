@@ -22,11 +22,14 @@
         height: 42px;
     }
     menu ul{
-        margin: 30% 0px;
         display: none;
         transition: all .2s ease;
         border-top: #ddd 1px solid;
         width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     #close{display: none; float: right;}
     #mbl[type=checkbox]:checked + ul{
@@ -52,7 +55,10 @@
         right: 45px;
     }
     .menumobileon{
-        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
         z-index: 2;
     }
     .menumobileon > ul{
