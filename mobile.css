@@ -24,7 +24,6 @@
     menu ul{
         display: none;
         transition: all .2s ease;
-        border-top: #ddd 1px solid;
         width: 100%;
         position: absolute;
         left: 50%;
@@ -60,6 +59,9 @@
         left: 0px;
         height: 100vh;
         z-index: 2;
+        background-color: var(--menu-color);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
     }
     .menumobileon > ul{
         border: none;
