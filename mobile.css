@@ -137,6 +137,9 @@
     width: 23px;
   }
 }
+.glitch {
+      width: min-content;
+}
 
 @media screen and (max-width:650px) {
     /*Games*/
