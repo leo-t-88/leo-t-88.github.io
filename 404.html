@@ -55,7 +55,7 @@
 </head>
 <body>
   <center><noscript><strong>Javascript est désactivé !</strong> Certains projets et fonctionnalités necessitent Javascript pour fonctionner. Veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
-    <div class="glitch" data-text="Erreur 404">Erreur 404</div>
+    <h1 class="glitch center__text" data-text="Erreur 404">Erreur 404</h1>
   <footer>
     <div class="footer">
       <div class="footerbox">
@@ -112,9 +112,11 @@
       color: var(--txt-color);
       mix-blend-mode: lighten;
       left: 50%;
-      top: 50%;
+      top: 0%;
       width: max-content;
-      transform: translate(-50%,-50%)
+      position: relative;
+      margin: 150px 0px;
+      transform: translate(-50%,0%);
     }
     .glitch:before, .glitch:after {
       content: attr(data-text);
@@ -125,19 +127,13 @@
       clip: rect(0, 0, 0, 0);
     }
     .glitch:before {
-      left: -1px;
-      text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
-    }
-    .glitch:after {
-      left: 1px;
-      text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
-    }
-    .glitch:before {
+      left: -3px;
       text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
       animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse;
     }
     .glitch:after {
-      text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+      left: 1px;
+      text-shadow: -5px 0 rgba(50, 150, 255, 0.7);
       animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
     }
     @keyframes glitch-loop-1 {
