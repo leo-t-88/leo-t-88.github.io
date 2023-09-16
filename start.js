@@ -33,5 +33,5 @@ setTimeout(function (){
     }
     setTimeout(function (){
         document.getElementById("loadnow").style.opacity = "1";
-    }, 5000)
-}, 5000)
+    }, 4000)
+}, 4000)
