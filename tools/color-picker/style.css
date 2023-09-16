@@ -11,7 +11,6 @@ body {
   -webkit-backdrop-filter: blur(9px);
   width: 310px;
   border-radius: 8px;
-  border: 2px solid #364347;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 50%;
