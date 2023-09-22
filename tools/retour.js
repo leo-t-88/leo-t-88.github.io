@@ -14,6 +14,6 @@ function part2(){
     setTimeout(part3,600)
 }
 function part3(){
-    document.getElementById("logo1").style.height = "1px";
-    setTimeout(function (){document.location = "../../"},500)
+    document.getElementById("logo1").style.height = "0px";
+    setTimeout(function (){document.location = "../../"},550)
 }
