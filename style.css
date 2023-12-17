@@ -8,14 +8,14 @@ a{
 /*Theme*/
 :root {
   --menu-color: rgba(200, 200, 200, 0.4);
-  --bg-filter: url(./background.jfif);
+  --bg-filter: url(./winterbg.jpg);
   --bg-color: #EEEEF5;
   --txt-color: #333333;
 }
 
 [data-theme="dark"] {
   --menu-color: rgba(0, 0, 0, 0.4);
-  --bg-filter: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)),url(./background.jfif);
+  --bg-filter: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)),url(./winterbg.jpg);
   --bg-color: #222222;
   --txt-color: #ffffff;
 }
@@ -23,14 +23,14 @@ a{
 @media (prefers-color-scheme: dark) {
   :root {
   --menu-color: rgba(0, 0, 0, 0.4);
-  --bg-filter: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)),url(./background.jfif);
+  --bg-filter: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)),url(./winterbg.jpg);
   --bg-color: #222;
   --txt-color: #ffffff;
   }
 
   [data-theme="light"] {
   --menu-color: rgba(200, 200, 200, 0.4);
-  --bg-filter: url(./background.jfif);
+  --bg-filter: url(./winterbg.jpg);
   --bg-color: #EEEEF5;
   --txt-color: #222222;
   }
@@ -228,8 +228,8 @@ body{
   display: table;
   margin: 35px auto;
   background-color: var(--menu-color);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 15px;
   color: var(--txt-color);
   padding: 10px 0px;
@@ -428,8 +428,8 @@ strong{
   z-index: 1;
   border-radius: 0px;
   background-color: var(--menu-color);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   opacity: 1;
   transform: translateY(0px);
   padding: 10px 0px 0px;
