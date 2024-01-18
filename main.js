@@ -69,7 +69,7 @@ if (dayDiff < 0) {
   }
 document.getElementById("age").innerHTML = " " + age + " ans";
 
-document.getElementById("copyright").innerHTML = "Tout droit réservé - ©Léo.t88 2022 - " + today.getFullYear();
+document.getElementById("copyright").innerHTML = "Tout droit réservé - ©Léo.t88 2021 - " + today.getFullYear();
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
