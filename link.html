@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Léo.t88"><meta name="theme-color" content="#A8FFCA"/>
+    <title>Léo.t88 | Lien bio</title>
+    <meta name="description" content="Linktree bio Léo.t88"/>
+    <meta name="keywords" content="léo, léo.t88, leo, leo.t88, bio, lien, link">
+    <meta name="title" content="Léo.t88 lien bio">
+    <meta property="og:title" content="Léo.t88 lien bio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leo-t-88.github.io/link">
+    <meta property="og:description" content="Linktree bio Léo.t88">
+
+    <script src="https://leo-t-88.github.io/icon.js"></script>
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <link rel="stylesheet" href="https://leo-t-88.github.io/tools/retour.css">
+    <style>
+        @font-face {
+            font-family: 'IndieFlower';
+            src: url('https://leo-t-88.github.io/font/IndieFlower-Regular.ttf');
+        }
+        @font-face {
+            font-family: 'JosefinSans';
+            src: url('https://leo-t-88.github.io/font/JosefinSans-Regular.ttf');
+        }
+        body, html{
+            font-family: 'JosefinSans';
+            min-height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bio{
+            position: relative;
+            display: contents;
+            top: 30px;
+            left: 50%;
+            transform: translate(-50%,0%);
+        }
+        .bio > img{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            height: 125px;
+            width: 125px;
+            border-radius: 75px;
+            cursor: pointer;
+        }
+        .social{
+            font-size: 32px;
+            margin-top: 5px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            text-align: center;
+            width: max-content;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 800;
+            margin: 0px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            text-align: center;
+            width: max-content;
+            font-family: 'IndieFlower';
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        a:hover{
+            color: #444444;
+        }
+        .links{
+            margin-top: 15px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            width: max-content;
+        }
+        .link{
+            display: block;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0%);
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+            border-radius: 50px;
+            height: 60px;
+            width: 500px;
+            box-shadow: 0px 2px 3px 2px rgba(50, 50, 50, .15);
+            cursor: pointer;
+            transition: ease-out .2s;
+        }
+        .link:hover{
+            background: rgba(240, 240, 240, 0.4);
+            width: 520px;
+        }
+        .link > img{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            padding: 5px;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+        }
+        .link > p{
+            font-family: 'JosefinSans';
+            position: absolute;
+            top: 50%;
+            left: 65px;
+            transform: translate(0%, -50%);
+            font-size: 25px;
+            margin: 3px 0px 0px;
+        }
+        @media screen and (max-width: 550px){
+            .link{
+                width: 300px;
+                height: 50px;
+            }
+            .link > img{
+                height: 40px;
+                width: 40px;
+            }
+            .link:hover{
+            width: 310px;
+            }
+        }
+    </style>
+    <div id="start"></div>
+    <div id="logobox" onclick="retour();" title="Retour à la page d'Accueil">
+      <img src="https://leo-t-88.github.io/logo.png" id="logo1">
+    </div>
+</head>
+<body>
+    <script>
+        random()
+        function random(){
+            var typebg = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+            if (typebg === 1 || typebg === 2){
+                var color1 = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
+                if (color1 === 1){
+                    color1 = "rgb(158, 208, 255)";
+                } else if (color1 === 2){
+                    color1 = "rgb(246, 155, 255)";
+                } else if (color1 === 3){
+                    color1 = "rgb(188,255,167)";
+                } else if (color1 === 4){
+                    color1 = "rgb(216,107,255)";
+                } else if (color1 === 5){
+                    color1 = "rgb(255,139,151)";
+                }
+                document.querySelector("body").style.backgroundImage = "linear-gradient(145deg," + color1 + "0%, rgb(255, 216, 163) 100%)";
+            } else {
+                var image = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+                if (image === 1){
+                    image = "url(https://leo-t-88.github.io/webos/japonbg.jpg)";
+                } else if (image === 2){
+                    image = "url(https://leo-t-88.github.io/webos/beach.jpg)";
+                } else if (image === 3){
+                    image = "url(https://leo-t-88.github.io/webos/mountain.jpg)";
+                }
+                document.querySelector("body").style.backgroundImage = image;
+            }
+        }
+    </script>
+<noscript><strong>Javascript est désactivé !</strong> Veuillez l'activer dans les paramètres de votre naviguateur.</noscript>
+<div class="bio">
+    <img src="https://leo-t-88.github.io/files/avatar.jpg" onclick="random()">
+    <h2>Léo.t88</h2>
+    <div class="social">
+        <a href="https://www.instagram.com/leo.t88/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://discord.com/users/596300572294905857" title="Discord"><i class="fab fa-discord"></i></a>
+        <a href="https://open.spotify.com/user/31iqrg4uw6tmojoishamsnkcdzee" title="Spotify"><i class="fab fa-spotify"></i></a>
+        <a href="https://github.com/leo-t-88" title="Github"><i class="fab fa-github"></i></a>
+        <a href="https://codepen.io/leo-t88" title="Codepen"><i class="fab fa-codepen"></i></a>
+        <a href="https://www.linkedin.com/in/leo-t88/" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="links">
+        <a href="https://tune-radio.github.io"><div class="link"><img src="https://tune-radio.github.io/favicon.png"><p>Tune Radio</p></div></a>
+        <a href="https://discord.gg/minuit"><div class="link"><img src="https://cdn.discordapp.com/icons/1133450910106931251/8574acd1893cb65fc649e2bd0748fa83.png?size=160"><p>夜〃Yonaka 🌑〃 #Winter</p></div></a>
+        <a href="https://discord.gg/giveawayfr"><div class="link"><img src="https://cdn.discordapp.com/icons/1174696201807994890/32c006454f16bf766d14f0ba750e40a3.png?size=160"><p>🌌・Astro Space</p></div></a>
+        <h2>Voir plus</h2>
+        <a onclick="retour();"><div class="link"><img src="https://leo-t-88.github.io/favicon.png"><p>Mon site web</p></div></a>
+    </div>
+</div>
+<script src="https://leo-t-88.github.io/tools/retour.js"></script>
+</body>
+</html>

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
 <head>
 <title>Léo.t88</title>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Léo.t88"><meta name="theme-color" content="#A8FFCA"/>
-
 <meta name="google-site-verification" content="bXDv9t2XkUqdLBdFxw2YnOTsliacW1-IungXeEUM_Fw" />
 <meta name="description" content="Léo.t88 Legacy version v1 Website"/>
 <meta name="keywords" content="léo, léo.t88, site, web, website, tools, outils, jeux, games, leo-t-88, 88">
@@ -18,6 +17,20 @@
 <meta name="twitter:title" content="Léo.t88">
 <meta name="twitter:description" content="Léo.t88 Legacy version v1 Website">
 <meta name="twitter:image" content="https://leo-t-88.github.io/favicon.png">
+  
+<meta name="description" content="Site personnel officiel de Léo.t88"/>
+<meta name="keywords" content="léo, léo.t88, leo, leo.t88, site, web, website, tools, outils, jeux, games">
+<meta name="title" content="Léo.t88">
+<meta property="og:title" content="Léo.t88">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leo-t88.github.io">
+<meta property="og:image" content="https://leo-t88.github.io/favicon.png">
+<meta property="og:description" content="Site personnel officiel de Léo.t88">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Léo.t88">
+<meta name="twitter:description" content="Site personnel officiel de Léo.t88">
+<meta name="twitter:image" content="https://leo-t88.github.io/favicon.png">
+<link rel="icon" type="image/png" href="./favicon.png"/>
 
 <script type="text/javascript">
   function googleTranslateElementInit() {
@@ -29,20 +42,24 @@
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="./mobile.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/png" href="./favicon.png"/>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
 <div id="start"></div>
 <div id="logobox">
-    <img src="./logo.png" class="logo1" id="logo1">
+  <a id="linkh"><img src="./logo.png" class="logo1" id="logo1"></a>
+  <div id="meter">
+    <span></span>
+  </div>
+  <div id="loadnow">
+    <p>Chargement... long ?</p>
+    <p class="loadnow" onclick="start()">Cliquez ici pour afficher la page</p>
+  </div>
 </div>
 <script>document.getElementById("start").style.display = "block"; document.getElementById("logo1").style.display = "none";</script>
 
 <header>
 <div id="google_translate_element" style="position: fixed; top: 2px; left: 17%; z-index:3;"></div>
 
-<a href="./"><img src="./logo.png" id="logo2"></a>
 <nav class="theme-switch-wrapper">
   <em>Thème :</em>
     <label for="themecheck" class="theme-switch">
@@ -51,7 +68,7 @@
     </label>
 </nav>
 
-<menu>
+<menu id="stmartmenu">
     <label for="mbl">
         <i class="fa fa-bars" id="bar" onclick="menu()"></i>
         <i class="fa fa-close" id="close" onclick="menu2()"></i>
@@ -61,6 +78,11 @@
           <li><a href="./file-explorer.html"><i class="fa fa-folder"></i>File explorer</a></li>
           <li><a href="./games.html"><i class="fa fa-gamepad"></i>Jeux</a></li>
           <li><a href="./tools.html"><i class="fa fa-wrench"></i>Outils</a></li>
+          <li><a href="./aboutme"><i class="fa fa-info-circle"></i>À propos de moi</a></li>
+          <li class="mobile"><a href="./webos"><i class="fa fa-paint-brush"></i>WebOS</a></li>
+          <li class="mobile"><a href="https://axoliamc.github.io"><i class="fa fa-paint-brush"></i>Axolia</a></li>
+          <li class="mobile"><a href="https://tune-radio.github.io"><i class="fa fa-paint-brush"></i>Tune radio</a></li>
+          <li class="pc"><a href="./#projets"><i class="fa fa-paint-brush"></i>Création</a></li>
           <li class="select"><a href="./"><i class="fa fa-home"></i>Accueil</a></li>
         </li>
       </ul>
@@ -70,17 +92,19 @@
 <div class="space"></div>
 </head>
 <body>
-  <center><noscript><strong>Javascript est désactiver ! :</strong> Certains projets necessitent Javascript pour fonctionner, veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
-    <div class="box">
+  <div id="scrollUp">
+    <a href="#top"><i class="fa fa-arrow-up"></i></a>
+  </div>
+  <section class="part1">
+  <center><noscript><strong>Javascript est désactivé !</strong> Certains projets et fonctionnalités necessitent Javascript pour fonctionner. Veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
+    <div class="box" id="socials">
         <img src="./logo.png" class="imgabout">
         <div>
         <h1 class="titleabout textgradient">Léo</h1>
-        <p class="textabout">Elève de 1ère au lycée général, vie en France 🌍.</p>
-        <p class="textabout">Passionné de programmation 💻, de musique 🎵, aime le VTT 🚲, le football ⚽ et les animaux 🐕.</p>
-        <p class="textabout">Voudrais travailler plutard chez Microsoft</p>
-        </div>
-        <div>
-
+        <p class="textabout"><strong>Âge</strong><b id="age" style="cursor: pointer;" title="Cliqué pour afficher mois et jours" onclick="document.getElementById('age').innerHTML = ' ' + age + ' ans, ' + monthDiff + ' mois et '+ dayDiff + ' jours';"></b></p>
+        <p class="textabout"><strong>Qui suis-je</strong> Elève de Terminale au lycée général, vit en France 🌍.</p>
+        <p class="textabout"><strong>Passions</strong> Programmation 💻, la musique 🎵, la nature et les animaux 🐕.</p>
+        <p class="textabout"><strong>Animal préferé</strong> Loup</p>
         </div>
     </div>
 
@@ -97,7 +121,18 @@
   
   <div class="box">
       <h1 class="titleabout">Mes projets :</h1>
+  <div class="box social" id="social">
+    <a href="https://github.com/leo-t-88" target="_blank"><img src="./files/github.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(0,0,0,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://open.spotify.com/user/31iqrg4uw6tmojoishamsnkcdzee" target="_blank"><img src="./files/spotify.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(78,214,66,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://www.instagram.com/leo.t88/" target="_blank"><img src="./files/insta.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'linear-gradient(125deg, rgba(63,94,251,0.4) 0%, rgba(185,129,255,0.4) 15%, rgba(224,56,111,0.4) 45%, rgba(255,0,0,0.4) 60%, rgba(254,111,35,0.4) 70%, rgba(252,221,70,0.4) 90%)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://discord.com/users/596300572294905857" target="_blank"><img src="./files/discord.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(123,159,255,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="mailto:leothomas743@gmail.com" target="_blank"><img src="./files/gmail.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'linear-gradient(100deg, rgba(20,137,255,0.4) 0%, rgba(20,137,255,0.4) 24%, rgba(255,63,63,0.4) 25%,rgba(255,63,63,0.4) 49%, rgba(255,190,63,0.4) 50%, rgba(255,190,63,0.4) 74%, rgba(58,194,46,0.4) 75%)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://www.duolingo.com/profile/Leo.t88" target="_blank"><img src="./files/duolingo.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(58,194,46,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://www.linkedin.com/in/leo-t88/" target="_blank"><img src="./files/linkedin.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(63,166,251,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://codepen.io/leo-t88" target="_blank"><img src="./files/codepen.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(0,0,0,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
+    <a href="https://scratch.mit.edu/users/LeoW0lfy/" target="_blank"><img src="./files/scratch.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(255,190,63,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
   </div>
+</section>
 
   <div class="projets">
       <div class="projetbox"><a href="https://tune-radio.github.io"><img src="https://tune-radio.github.io/favicon.png"><h3>Tropic Music v3 (Tune Radio)</h3></a></div>
@@ -112,7 +147,87 @@
       <div class="projetbox"><a href="https://leo-t-88.github.io/scratch-wars2"><img src="https://leo-t-88.github.io/files/games/sw2.webp"><h3>Scratch wars 2</h3></a></div>
       <div class="projetbox"><a href="https://leo-t-88.github.io/games/play/sneaky-snake"><img src="./games/sns.PNG"><h3>Sneaky snake</h3></a></div>
       <div class="projetbox"><a href="https://axoliamc.github.io/"><img src="https://axoliamc.github.io/favicon.png"><h3>Tropic Mc v5 (Axolia)</h3></a></div>
+=======
+<section class="part2 reveal" id="projets">
+  <h1 class="reveal title">Mes Projets et Remix</h1>
+    <div class="projets reveal">
+      <div class="projetbox"><a href="./tools/nbgen/"><img src="./files/projets/number-gen.png" loading="lazy"><h3>Nombres Aléatoires</h3></a></div>
+      <div class="projetbox"><a href="./tools/pileouface/"><img src="./files/projets/pileouface.png" loading="lazy"><h3>Pile ou face</h3></a></div>
+      <div class="projetbox"><a href="./tools/color-picker/"><img src="./files/projets/color-picker.png" loading="lazy"><h3>Color Picker (RMX)</h3></a></div>
+      <div class="projetbox"><a href="./tools/color-generator/"><img src="./files/projets/color-generator.png" loading="lazy"><h3>Générateur de couleur (RMX)</h3></a></div>
+      <div class="projetbox"><a href="./tools/color-converter/"><img src="./files/projets/color-converter.png" loading="lazy"><h3>Convertiseur de couleur (RMX)</h3></a></div>
+      <div class="projetbox"><a href="./#games"><img src="./files/projets/games.png" loading="lazy"><h3>Jeux Vidéo (Web)</h3></a></div>
+      <div class="projetbox"><a href="./#others"><img src="./files/projets/more.png" loading="lazy"><h3>Autres projets</h3></a></div>
+    </div>
+</section>
+<section class="part3" id="games">
+  <div class="reveal title">
+    <img src="./files/games/logojoy.png" height="120px"><h1>Jeux</h1>
   </div>
+  <div class="reveal console">
+    <img class="joycon" src="./files/games/joyconL.png">
+    <iframe src="./games.html" id="switchemu"></iframe>
+    <img class="joycon" src="./files/games/joyconR.png">
+    <img src="./files/games/homebtn.png" class="homebtn" onclick="document.getElementById('switchemu').src = './games.html'" title="Retour Accueil">
+  </div>
+  <div class="reveal description">
+    <ul>
+     <li>Les jeux sont en 720p (30fps) [sauf remix (RMX)]</li>
+     <li>Crée avec <a href="https://desktop.turbowarp.org/">TurboWarp Desktop</a> une version modifié de Scratch open source</li>
+     <li>Converti pour le web à partir du porjet open source <a href="https://packager.turbowarp.org/">Turbo packager</a> (<a href="https://github.com/sheepTester/htmlifier">HTMLifier</a> pour les rmx)</li>
+    </ul>
+  </div>
+</section>
+<section class="part4" id="others">
+  <div class="reveal title">
+    <h1>Autres Projets</h1>
+  </div>
+  <div class="reveal title">
+    <div class="othercen">
+      <a href="https://tune-radio.github.io"><div class="tm"><img src="https://tune-radio.github.io/favicon.png"><h1>Tune radio</h1></div></a>
+      <a href="https://axoliamc.github.io/"><div class="axo"><img src="https://axoliamc.github.io/favicon.png"><h1>Axolia (Soon)</h1></div></a>
+      <a href="https://leo-t-88.github.io/webos/"><div class="wos"><img src="https://leo-t-88.github.io/webos/favicon.png"><h1>WebOS (Soon)</h1></div></a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footerbox">
+        <h2>Léo.t88</h2>
+        <a href="./aboutme"><p>A propos de moi</p></a>
+        <a href="mailto:leothomas743@gmail.com" target="_blank"><p>Contacter</p></a>
+        <a href="./#socials"><p>Liens sociaux</p></a>
+        <a href="./#projets"><p>Projets</p></a>
+        <a href="./#games"><p>Jeux</p></a>
+        <a href="./#others"><p>Autres projets</p></a>
+        <a href="./sitemap"><p>Sitemap</p></a>
+      </div>
+      
+      <div class="footerbox">
+        <h2>Projets et Remix</h2>
+        <a href="./tools/nbgen/"><p>Générateur de nombres</p></a>
+        <a href="./tools/pileouface/"><p>Pile ou face</p></a>
+        <a href="./tools/color-picker/"><p>Color picker (RMX)</p></a>
+        <a href="./tools/color-generator/"><p>Générateur de couleur (RMX)</p></a>
+        <a href="./tools/color-converter/"><p>Convertiseur de couleur (RMX)</p></a>
+      </div>
+      
+      <div class="footerbox">
+        <h2>Jeux</h2>
+        <a href="./scratch-wars1/"><p>Scratch wars 1 (RMX)</p></a>
+        <a href="./scratch-wars2/"><p>Scratch wars 2 (RMX)</p></a>
+      </div>
+      <div class="footerbox">
+        <h2>Autres projets</h2>
+        <a href="https://tune-radio.github.io"><p>Tune radio</p></a>
+        <a href="https://axoliamc.github.io/"><p>Axolia (Soon)</p></a>
+        <a href="https://leo-t-88.github.io/webos/"><p>WebOS (Soon)</p></a>
+      </div>
+    </div>
+    <center>
+      <h2 id="copyright"></h2>
+    </center>
+  </footer>
+</section>
 </body>
 
 <footer>
@@ -151,7 +266,6 @@
   <h2>Tout droit réservé - ©Léo.t88 2021 - 2022</h2>
 </center>
 </footer>
-    
 <script src="./start.js"></script>
 <script src="./main.js"></script>
 </html>

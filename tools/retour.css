@@ -1,0 +1,55 @@
+#logobox{
+    position: fixed;
+    z-index: 5;
+    display: block;
+    bottom: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    transition: 0.6s;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    box-shadow: 0px 2px 3px 2px rgba(50, 50, 50, .15);
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#logobox:hover{
+    background-color: rgba(230, 230, 230, 0.4);
+}
+#start{
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 0%;
+    height: 0%;
+    z-index: 4;
+    transition: 0.4s;
+    display: none;
+}
+#logo1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 35px;
+    z-index: 5;
+    transition: 0.6s;
+}
+noscript{
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    background-color: rgba(235, 8, 65, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20% 0px;
+    z-index: 10;
+    text-align: center;
+}
