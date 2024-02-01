@@ -425,11 +425,11 @@ html{
 }
 .py > span{
     background-color: #3572A5;
-    width: 35%;
+    width: 40%;
 }
 .cs > span{
     background-color: #178600;
-    width: 10%;
+    width: 40%;
 }
 .scratch > span{
     background-color: #ffa930;
