@@ -1,11 +1,11 @@
 @font-face{
     font-family:"FOT-Rodin NTLG Pro";
     font-style:normal;
-    src:url(./files/FOT-Rodin-NTLG-Pro-Light.otf)}
+    src:url(../files/FOT-Rodin-NTLG-Pro-Light.otf)}
 @font-face{
     font-family:"FOT-Rodin NTLG Pro Bold";
     font-style:normal;
-    src:url(./files/FOT-Rodin-NTLG-Pro-Semi-Bold.otf)}
+    src:url(../files/FOT-Rodin-NTLG-Pro-Semi-Bold.otf)}
 /*Theme*/
 :root {--bg-color: #ededed;--txt-color: #333;--box-color: #ffffff;}
 [data-theme="dark"] {--bg-color: #222222;--txt-color: #fff;--box-color: #3D3D37;}
