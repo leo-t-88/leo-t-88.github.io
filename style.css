@@ -184,10 +184,6 @@ color: white;
   .topmenu{
     height: 70px;
   }
-
-/*Google Traduction*/
-select{background-color: transparent; border: 2px solid #fff; border-radius: 50px; color: #fff; height: 30px;cursor: pointer;}.goog-logo-link, .VIpgJd-ZVi9od-l4eHX-hSRGPd{display: none;}.goog-te-gadget{font-size: 0px;}option{color: lightseagreen; font-size: 14px; font-weight: 600; background-color: var(--bg-color);}select::-webkit-scrollbar-thumb:hover {background-color: pink;}select::-webkit-scrollbar{width: 12px;height: 0px;}
-
 /*Page d'accueil*/
 body{
     scroll-behavior: smooth;
