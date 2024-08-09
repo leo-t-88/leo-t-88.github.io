@@ -480,7 +480,7 @@ strong{
 
 /*Footer*/
 footer{
-  margin-top: 400px;
+  margin-top: 210px;
   border-top: rgb(145, 228, 255) 5px solid;
   background-color: var(--menu-color);
   backdrop-filter: blur(3px);
