@@ -122,11 +122,11 @@
     margin: 250px auto 0px auto;
     width: 43%;
 }
-.tm, .axo, .wos {
+.tm, .axo {
     padding: 10px 10px;
     font-size: 17px;
 }
-.tm img, .axo img, .wos img{
+.tm img, .axo img{
     height: 75px;
     padding-right: 10px;
   }
