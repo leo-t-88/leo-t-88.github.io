@@ -445,7 +445,7 @@ strong{
   text-decoration: none;
   color: var(--txt-color);
 }
-.tm, .axo, .wos{
+.tm, .axo{
   justify-content: center;
   align-items: center;
   padding: 20px 10px;
@@ -456,23 +456,18 @@ strong{
   border-radius: 20px;
   cursor: pointer;
 }
-.tm:hover, .axo:hover, .wos:hover{
+.tm:hover, .axo:hover{
   background-color: var(--bg-color);
 }
 .tm, .axo{
-  margin: 250px auto 0px auto;
+  margin: 0px auto;
   display: inline-flex;
   width: 45%;
 }
 .tm{
   margin-left: 2%;
 }
-.wos{
-  margin: 20px auto;
-  display: flex;
-  width: 95%;
-}
-.tm img, .axo img, .wos img{
+.tm img, .axo img{
   height: 100px;
   padding-right: 10px;
 }
