@@ -24,7 +24,7 @@ function fullminscreen(){
         document.querySelector(".windowsme").style.top = "100px";
         document.querySelector(".windowsme").style.borderRadius = "0px";
         document.querySelector(".wintent").style.height = (document.documentElement.scrollHeight - 130) + "px";
-        document.getElementById("minmax").src = "https://leo-t-88.github.io/webos/img/maximize.png"
+        document.getElementById("minmax").src = "https://leo-t-88.github.io/files/ico/maximize.png"
         statut = 1;
     } else {
         document.querySelector(".windowsme").style.width = "90%";
@@ -32,7 +32,7 @@ function fullminscreen(){
         document.querySelector(".windowsme").style.top = "150px";
         document.querySelector(".windowsme").style.borderRadius = "10px";
         document.querySelector(".wintent").style.height = (document.documentElement.scrollHeight - 230) + "px";
-        document.getElementById("minmax").src = "https://leo-t-88.github.io/webos/img/maxmin.png"
+        document.getElementById("minmax").src = "https://leo-t-88.github.io/files/ico/maxmin.png"
         statut = 0;
     }
 }
