@@ -15,5 +15,5 @@ function part2(){
 }
 function part3(){
     document.getElementById("logo1").style.height = "0px";
-    setTimeout(function (){document.location = "../../"},550)
+    setTimeout(function (){document.location = "https://leo-t-88.github.io"},550)
 }
