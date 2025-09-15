@@ -1,4 +1,4 @@
 # Léo.t88
-(Fr) Site personnel de Léo.t88 - (En) Leo.t88 personal website
+(EN) Léo.t88's portfolio - (FR) Porfolio de Léo.t88
 
-``Version 2.2.6``
+``Version 3.0.0``

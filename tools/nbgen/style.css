@@ -1,105 +1,13 @@
-/*Theme*/
-:root {
-  --menu-color: rgba(200, 200, 200, 0.4);
-  --bg-color: #a7ff81;
-  --txt-color: #000000;
-}
-
-[data-theme="dark"] {
-  --menu-color: rgba(0, 0, 0, 0.4);
-  --bg-color: #222546;
-  --txt-color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  --menu-color: rgba(0, 0, 0, 0.4);
-  --bg-color: #222546;
-  --txt-color: #ffffff;
-  }
-
-  [data-theme="light"] {
-  --menu-color: rgba(200, 200, 200, 0.4);
-  --bg-color: #a7ff81;
-  --txt-color: #222222;
-  }
-}
-
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  margin: -10px 0px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,0%);
-  z-index: 3;
-  }
-  .theme-switch {
-  display: inline-block;
-  height: 34px;
-  width: 60px;
-  position: relative;
-  }
-  
-  .slider {
-  background-color:lightblue;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border-radius: 35px;
-  cursor: pointer;
-  transition: 0.4s;
-  }
-  .slider::before {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 3px;
-  background-color: #fff;
-  width: 27px;
-  height: 27px;
-  transition: 0.4s;
-  border-radius: 50%;
-  }
-  .switcher{
-  position:absolute;
-  display:block;
-  top:70px;
-  right:50px;
-  width:45px;
-  height:30px;
-  background: #fff;
-  box-shadow:0 3px 6px #00000029;
-  border-radius:31px;
-  }
-  
-  input:checked + .slider {
-  background-color: #233a53;
-  }
-  input:checked + .slider::before {
-  transform: translateX(26px);
-  }
-  label > input[type="checkbox"] {
-  display: none;
-  }
-  
-  em{
-  color: var(--txt-color);
-  }
-
 body {
-    background-color: var(--bg-color);
+    background-color:  #b3f098;
     font-family:Arial, Helvetica, sans-serif;
     transition: all ease-out .2s;
+    color: #000000;
   }
 h1{
   color: orange;
 }
 .nbgen{
-  color: var(--txt-color);
   padding: 10px 10px;
   position: absolute;
   top: 50%;
@@ -107,16 +15,14 @@ h1{
   transform: translate(-50%,-50%);
   height: auto;
   width: 60%;
-  background: var(--menu-color);
   border-radius: 20px;
   text-align: center;
   transition: all ease-out .2s;
 }
 
 #min , #max , #nbgen, button{
-  color: var(--txt-color);
-  background: var(--bg-color);
-  border: 2px solid var(--txt-color);
+  background: #b0e29a;
+  border: 1px solid #000000;
   border-radius: 50px;
   padding: 7px 5px;
   width: 50%;

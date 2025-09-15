@@ -16,9 +16,8 @@ html, body {
   left: 50%;
   width: 70%;
   transform: translate(-50%,-50%);
-  background-color: rgba(150, 150, 150, 0.4);
+  background-color: rgba(127, 127, 127, 0.2);
   backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
   border-radius: 50px;
   font-family: Tahoma, sans-serif;
 }
@@ -26,7 +25,7 @@ html, body {
 h1 {
   font-size: 4em;
   line-height: 1.4;
-  color: #85fffb;
+  color: #ffffff;
 }
 
 h2 {
@@ -52,23 +51,6 @@ input {
   color: white;
   font-size: 1.5em;
   font-weight: lighter;
-  letter-spacing: 2;
-}
-::-webkit-input-placeholder {
-  color: white;
-  opacity: 0.7;
-}
-:-moz-placeholder {
-  color: white;
-  opacity: 0.7;
-}
-::-moz-placeholder {
-  color: white;
-  opacity: 0.7;
-}
-:-ms-input-placeholder {
-  color: white;
-  opacity: 0.7;
 }
 
 @media screen and (max-width: 600px){

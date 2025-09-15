@@ -1,180 +1,186 @@
 <!DOCTYPE html>
-<html id="top">
-<head>
-<title>Léo.t88</title>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Léo.t88"><meta name="theme-color" content="#A8FFCA"/>
-<meta name="google-site-verification" content="bXDv9t2XkUqdLBdFxw2YnOTsliacW1-IungXeEUM_Fw" />
-  
-<meta name="description" content="Site personnel officiel de Léo.t88"/>
-<meta name="keywords" content="léo, léo.t88, leo, leo.t88, site, web, website, tools, outils, jeux, games">
-<meta name="title" content="Léo.t88">
-<meta property="og:title" content="Léo.t88">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://leo-t88.github.io">
-<meta property="og:image" content="https://leo-t88.github.io/favicon.png">
-<meta property="og:description" content="Site personnel officiel de Léo.t88">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Léo.t88">
-<meta name="twitter:description" content="Site personnel officiel de Léo.t88">
-<meta name="twitter:image" content="https://leo-t88.github.io/favicon.png">
-<link rel="icon" type="image/png" href="./favicon.png"/>
-<link rel="stylesheet" href="./start.css">
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./mobile.css">
-<div id="start"></div>
-<div id="logobox">
-  <a id="linkh"><img src="./logo.png" class="logo1" id="logo1"></a>
-  <div id="meter">
-    <span></span>
-  </div>
-  <div id="loadnow">
-    <p>Long chargement... ?</p>
-    <p class="loadnow" onclick="start()">Cliquez ici pour afficher la page</p>
-  </div>
-</div>
-<script>document.getElementById("start").style.display = "block"; document.getElementById("logo1").style.display = "none";</script>
-
-<header>
-<div id="google_translate_element" style="position: fixed; top: 2px; left: 17%; z-index:3;"></div>
-
-<nav class="theme-switch-wrapper">
-  <em>Thème :</em>
-    <label for="themecheck" class="theme-switch">
-      <input type="checkbox" id="themecheck"/>
-      <div class="slider round"></div>
-    </label>
-</nav>
-
-<menu id="stmartmenu">
-    <label for="mbl">
-        <i class="fa fa-bars" id="bar" onclick="menu()"></i>
-        <i class="fa fa-close" id="close" onclick="menu2()"></i>
-    </label>
-    <input type="checkbox" id="mbl" role="button">
-      <ul>
-          <li><a href="./aboutme"><i class="fa fa-info-circle"></i>À propos de moi</a></li>
-          <li class="mobile"><a href="https://github.com/leo-t-88/japanese-keyboard/tree/main"><i class="fa fa-paint-brush"></i>Japanese Keyboard</a></li>
-          <li class="mobile"><a href="https://leo-t-88.github.io/tune-radio"><i class="fa fa-paint-brush"></i>Tune radio</a></li>
-          <li class="pc"><a href="./#projets"><i class="fa fa-paint-brush"></i>Création</a></li>
-          <li class="select"><a href="./"><i class="fa fa-home"></i>Accueil</a></li>
-        </li>
-      </ul>
-      <div class="menugradient"></div>
-</menu>
-</header>
-<div class="space"></div>
-</head>
-<body>
-  <div id="scrollUp">
-    <a href="#top"><i class="fa fa-arrow-up"></i></a>
-  </div>
-  <section class="part1">
-  <center><noscript><strong>Javascript est désactivé !</strong> Certains projets et fonctionnalités necessitent Javascript pour fonctionner. Veuillez l'activer dans les paramètres de votre naviguateur.</noscript></center>
-    <div class="box" id="socials">
-        <img src="./logo.png" class="imgabout">
-        <div>
-        <h1 class="titleabout textgradient">Léo</h1>
-        <p class="textabout"><strong>Âge</strong><b id="age" style="cursor: pointer;" title="Cliqué pour afficher mois et jours" onclick="document.getElementById('age').innerHTML = ' ' + age + ' ans, ' + monthDiff + ' mois et '+ dayDiff + ' jours';"></b></p>
-        <p class="textabout"><strong>Qui suis-je</strong> Elève de 1ère année en BUT, vit en France 🌍.</p>
-        <p class="textabout"><strong>Passions</strong> Programmation 💻, la musique 🎵, la nature et les animaux 🐕.</p>
-        <p class="textabout"><strong>Animal préferé</strong> Loup</p>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Léo.t88</title>
+        <meta name="description" content="Léo.t88's portfolio">
+        <meta name="keywords" content="léo, léo.t88, leo, leo.t88, leot88, site, website, personnal, portfolio">
+        <meta name="title" content="Léo.t88">
+        <meta property="og:title" content="Léo.t88">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://leo-t88.github.io">
+        <meta property="og:image" content="https://leo-t88.github.io/favicon.png">
+        <meta property="og:description" content="Léo.t88's portfolio">
+        <link rel="preload" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css" as="style">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <meta name="google-site-verification" content="bXDv9t2XkUqdLBdFxw2YnOTsliacW1-IungXeEUM_Fw" />
+        <noscript>
+            <style>
+                body{overflow: visible;}
+                #startanimation{display:none;}
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <!-- Fixed elements -->
+        <div class="background">
+            <div class="night">
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+            </div>
         </div>
-    </div>
+        <div id="startanimation">
+            <img src="assets/favicon.png" alt="Website logo">
+        </div>
+        <div class="lang">
+            <a href="./fr"><p>FR</p></a>
+        </div>
+        <div class="theme">
+            <label for="themecheck">
+                <input type="checkbox" id="themecheck">
+                <i class="fa-solid fa-sun-bright"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="line1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                    <path class="line2" d="M0 50h70" />
+                    <path class="line3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+                </svg>
+            </label>
+            <div class="menu-content">
+                <a href="#"><h2>Home</h2></a>
+                <a href="link"><h2>LinkTree</h2></a>
+                <a href="sitemap"><h2>SiteMap</h2></a>
+            </div>
+        </div>
 
-  <div class="box social" id="social">
-    <a href="https://github.com/leo-t-88" target="_blank"><img src="./files/github.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(0,0,0,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://open.spotify.com/user/31iqrg4uw6tmojoishamsnkcdzee" target="_blank"><img src="./files/spotify.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(78,214,66,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://www.instagram.com/leo.t88/" target="_blank"><img src="./files/insta.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'linear-gradient(125deg, rgba(63,94,251,0.4) 0%, rgba(185,129,255,0.4) 15%, rgba(224,56,111,0.4) 45%, rgba(255,0,0,0.4) 60%, rgba(254,111,35,0.4) 70%, rgba(252,221,70,0.4) 90%)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://discord.com/users/596300572294905857" target="_blank"><img src="./files/discord.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(123,159,255,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="mailto:leothomas743@gmail.com" target="_blank"><img src="./files/gmail.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'linear-gradient(100deg, rgba(20,137,255,0.4) 0%, rgba(20,137,255,0.4) 24%, rgba(255,63,63,0.4) 25%,rgba(255,63,63,0.4) 49%, rgba(255,190,63,0.4) 50%, rgba(255,190,63,0.4) 74%, rgba(58,194,46,0.4) 75%)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://www.duolingo.com/profile/Leo.t88" target="_blank"><img src="./files/duolingo.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(58,194,46,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://www.linkedin.com/in/leo-t88/" target="_blank"><img src="./files/linkedin.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(63,166,251,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://codepen.io/leo-t88" target="_blank"><img src="./files/codepen.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(0,0,0,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-    <a href="https://scratch.mit.edu/users/LeoW0lfy/" target="_blank"><img src="./files/scratch.png" loading="lazy" onmouseover="document.getElementById('social').style.background = 'rgba(255,190,63,0.4)';" onmouseout="document.getElementById('social').style.background = 'var(--menu-color)';"></a>
-  </div>
-</section>
+        <div class="taskbar">
+            <a href="#intro" class="smooth-scroll"><img src="assets/favicon.png" alt="Website logo" id="favtask"></a>
+            <a href="#p1" class="smooth-scroll"><img src="assets/customkey.png" alt="CustomKey logo"></a>
+            <a href="#p2" class="smooth-scroll"><img src="assets/tune-radio.png" alt="Japanese flag"></a>
+            <a href="#ap" class="smooth-scroll"><i class="fa-solid fa-grid-2-plus"></i></a>
+        </div>
 
-<section class="part2 reveal" id="projets">
-  <h1 class="reveal title">Mes Projets et Remix</h1>
-    <div class="projets reveal">
-      <div class="projetbox"><a href="./tools/nbgen/"><img src="./files/projets/number-gen.png" loading="lazy"><h3>Nombres Aléatoires</h3></a></div>
-      <div class="projetbox"><a href="./tools/pileouface/"><img src="./files/projets/pileouface.png" loading="lazy"><h3>Pile ou face</h3></a></div>
-      <div class="projetbox"><a href="./tools/color-picker/"><img src="./files/projets/color-picker.png" loading="lazy"><h3>Color Picker (RMX)</h3></a></div>
-      <div class="projetbox"><a href="./tools/color-generator/"><img src="./files/projets/color-generator.png" loading="lazy"><h3>Générateur de couleur (RMX)</h3></a></div>
-      <div class="projetbox"><a href="./tools/color-converter/"><img src="./files/projets/color-converter.png" loading="lazy"><h3>Convertiseur de couleur (RMX)</h3></a></div>
-      <div class="projetbox"><a href="./#games"><img src="./files/projets/games.png" loading="lazy"><h3>Jeux Vidéo (Web)</h3></a></div>
-      <div class="projetbox"><a href="./#others"><img src="./files/projets/more.png" loading="lazy"><h3>Autres projets</h3></a></div>
-    </div>
-</section>
-<section class="part3" id="games">
-  <div class="reveal title">
-    <img src="./files/games/logojoy.png" height="120px"><h1>Jeux</h1>
-  </div>
-  <div class="reveal console">
-    <img class="joycon" src="./files/games/joyconL.png">
-    <iframe src="./games/index.html" id="switchemu"></iframe>
-    <img class="joycon" src="./files/games/joyconR.png">
-    <img src="./files/games/homebtn.png" class="homebtn" onclick="document.getElementById('switchemu').src = './games/index.html'" title="Retour Accueil">
-  </div>
-  <div class="reveal description">
-    <ul>
-     <li>Crée avec <a href="https://desktop.turbowarp.org/">TurboWarp Desktop</a> une version modifié de Scratch open source</li>
-     <li>Converti pour le web à partir du porjet open source <a href="https://packager.turbowarp.org/">Turbo packager</a> (<a href="https://github.com/sheepTester/htmlifier">HTMLifier</a> pour les RMX)</li>
-    </ul>
-  </div>
-</section>
-<section class="part4" id="others">
-  <div class="reveal title">
-    <h1>Autres Projets</h1>
-  </div>
-  <div class="reveal title">
-    <div class="othercen">
-      <a href="https://leo-t-88.github.io/tune-radio"><div class="tm"><img src="https://leo-t-88.github.io/tune-radio/favicon.png"><h1>Tune radio</h1></div></a>
-      <a href="https://github.com/leo-t-88/japanese-keyboard/tree/main"><div class="axo"><img src="https://github.com/leo-t-88/japanese-keyboard/raw/main/assets/app.ico"><h1>Japanese Keyboard</h1></div></a>
-    </div>
-  </div>
-  <footer>
-    <div class="footer">
-      <div class="footerbox">
-        <h2>Léo.t88</h2>
-        <a href="./aboutme"><p>A propos de moi</p></a>
-        <a href="mailto:leothomas743@gmail.com" target="_blank"><p>Contacter</p></a>
-        <a href="./#socials"><p>Liens sociaux</p></a>
-        <a href="./#projets"><p>Projets</p></a>
-        <a href="./#games"><p>Jeux</p></a>
-        <a href="./#others"><p>Autres projets</p></a>
-        <a href="./sitemap"><p>Sitemap</p></a>
-      </div>
-      
-      <div class="footerbox">
-        <h2>Projets et Remix</h2>
-        <a href="./tools/nbgen/"><p>Générateur de nombres</p></a>
-        <a href="./tools/pileouface/"><p>Pile ou face</p></a>
-        <a href="./tools/color-picker/"><p>Color picker (RMX)</p></a>
-        <a href="./tools/color-generator/"><p>Générateur de couleur (RMX)</p></a>
-        <a href="./tools/color-converter/"><p>Convertiseur de couleur (RMX)</p></a>
-      </div>
-      
-      <div class="footerbox">
-        <h2>Jeux</h2>
-        <a href="./scratch-wars1/"><p>Scratch wars 1 (RMX)</p></a>
-        <a href="./scratch-wars2/"><p>Scratch wars 2 (RMX)</p></a>
-      </div>
-      <div class="footerbox">
-        <h2>Autres projets</h2>
-        <a href="https://leo-t-88.github.io/tune-radio"><p>Tune radio</p></a>
-        <a href="https://github.com/leo-t-88/japanese-keyboard/tree/main"><p>Japanese Keyboard</p></a>
-      </div>
-    </div>
-    <center>
-      <h2 id="copyright"></h2>
-    </center>
-  </footer>
-</section>
-</body>
-<script src="./start.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="./main.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Blank space for making animation for script version working -->
+        <div class="blankspace">
+            <div id="introbs"></div>
+            <div id="p1bs"></div>
+            <div id="p2bs"></div>
+            <div id="apbs"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="window">
+            <div class="winicon">
+                <img src="assets/minimize.png" alt="minimize window button">
+                <img src="assets/maxmin.png"  alt="maximize window button">
+                <img src="assets/close.png"  alt="close window button">
+            </div>
+            <div class="content">
+                <section id="intro">
+                    <h1>Léo</h1>
+                    <div class="social">
+                        <a href="https://www.instagram.com/leo.t88/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/users/596300572294905857" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://open.spotify.com/user/31iqrg4uw6tmojoishamsnkcdzee" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="https://github.com/leo-t-88" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/leo-t88/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <h2>Hey, I'm Léo, a french computer science student</h2>
+                    <div class="skills">
+                        <div>
+                            <div>
+                                <p class="mt">HTML</p><div class="meter html"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">CSS</p><div class="meter css"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">JavaScript</p><div class="meter js"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">C#</p><div class="meter cs"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">Java</p><div class="meter java"><span></span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="progressc">
+                                <svg class="progressbarc"><circle cx="80" cy="80" r="70" class="progressbar-circle acfr"></circle></svg>
+                                <span class="progressbar-text"><img src="https://d35aaqx5ub95lt.cloudfront.net/images/borderlessFlags/7488bd7cd28b768ec2469847a5bc831e.svg" alt="french flag" height="30"><br>Native</span>
+                            </div>
+                            <div class="progressc">
+                                <svg class="progressbarc"><circle cx="80" cy="80" r="70" class="progressbar-circle acen"></circle></svg>
+                                <span class="progressbar-text"><img src="https://d35aaqx5ub95lt.cloudfront.net/images/borderlessFlags/b9817d83179e278c91771d903953bfc6.svg" alt="american flag" height="30"><br>B2</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+                    <path fill="rgb(193, 178, 150)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" transform="scale(-1, -1) translate(-1440, -200)" />
+                </svg> 
+                <section id="p1">
+                    <h2 class="reveal">CustomKey</h2>
+                    <div class="reveal">
+                        <div>
+                            <img src="assets/ckcapture.webp" alt="CustomKey screenshot" class="projcapture">
+                        </div>
+                        <div>
+                            <h3>CustomKey is a customizable keyboard, written in C# for Windows, macOS and Linux. You can choose a keyboard layout and enter text in the app of your choice.</h3>
+                            <a href="https://github.com/leo-t-88/customkey" target="_blank"><h3 class="proj5">View project <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                        </div>
+                    </div>
+                </section>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+                    <path fill="rgb(193, 178, 150)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+                </svg>
+                <section id="p2">
+                    <h2 class="reveal">Tune Radio</h2>
+                    <div class="reveal">
+                        <div>
+                            <h3>Tune Radio is a single-page web application that allows users to stream French national and regional radio stations. It also offers five playlists sorted by music genre to help users discover new songs.</h3>
+                            <a href="https://leo-t-88.github.io/tune-radio/" target="_blank"><h3 class="proj5">View project <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                        </div>
+                        <div>
+                            <img src="assets/trcapture.webp" alt="Tune Radio screenshot" class="projcapture">
+                        </div>
+                    </div>
+                </section>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+                    <path fill="rgb(79, 108, 135)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" transform="scale(-1, -1) translate(-1440, -200)" />
+                </svg> 
+                <section id="ap">
+                    <h2 class="reveal">Other projects</h2>
+                    <div class="reveal">
+                        <div>
+                            <img src="assets/japkey.webp" alt="screenshot" id="projImg" class="projcapture">
+                        </div>
+                        <div class="otherproj">
+                            <a href="https://github.com/leo-t-88/japanese-keyboard" target="_blank" id="proj1"><h3><i class="fa-solid fa-arrow-right"></i> Japanese Keyboard</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/color-picker/" target="_blank" id="proj2"><h3><i class="fa-solid fa-arrow-right"></i> Color Picker</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/color-generator/" target="_blank" id="proj3"><h3><i class="fa-solid fa-arrow-right"></i> Color Generator</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/pileouface/" target="_blank" id="proj4"><h3><i class="fa-solid fa-arrow-right"></i> Heads or tails</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/nbgen/" target="_blank" id="proj5"><h3><i class="fa-solid fa-arrow-right"></i> Random numbers</h3></a>
+                        </div>
+                    </div>
+                    <h3 id="copyright">Copyright ©Léo.t88</h3>
+                </section>
+            </div>
+        </div>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>

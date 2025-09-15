@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Color converter | Léo.t88</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="../retour.css">
-  <link rel="icon" type="image/png" href="../../favicon.png"/>
-
-  <div id="start"></div>
-  <div id="logobox" onclick="retour();" title="Retour à la page d'Accueil">
-    <img src="../../logo.png" id="logo1">
-  </div>
-</head>
-<body>
-
-<div class="container">
-  <center>
-  <div class="box">
-  <h1>Color converter</h1>
-  <h2>HEX ==> RGB et RGB ==> HEX</h2>
-  <input type="text" value="#6dffc0" placeholder="Entrer une valeur HEX" id="hex"><br/>
-  <input type="text" id="result" placeholder="Entrer une valeur RGB">
-  </div>
-</center>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color converter | Léo.t88</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../retour.css">
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+  </head>
+  <body>
+    <div id="start"></div>
+    <div id="logobox" onclick="retour();" title="Back to home page">
+      <img src="../../assets/favicon.png" id="logo1" alt="website logo">
+    </div>
+    <div class="container">
+      <div class="box">
+        <h1>Color converter</h1>
+        <h2>HEX ==> RGB et RGB ==> HEX</h2>
+        <input type="text" value="#85c4ff" placeholder="Enter an HEX value" id="hex"><br>
+        <input type="text" id="result" placeholder="Enter an RGB value">
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script>
     function hexToRgb(hex) {
       var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
       hex = hex.replace(shorthandRegex, function(m, r, g, b) {
@@ -41,36 +34,36 @@
           g: parseInt(result[2], 16),
           b: parseInt(result[3], 16)
       } : null;
-  }
+    }
 
-function rgbToHex(rgb){
-rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-return "#" +
- ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
- ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
- ("0" + parseInt(rgb[3],10).toString(16)).slice(-2);
-}
+    function rgbToHex(rgb){
+      rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+      return "#" +
+      ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+      ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+      ("0" + parseInt(rgb[3],10).toString(16)).slice(-2);
+    }
 
-  (function($){
-    var value = $('#hex').val();
+    (function($){
+      var value = $('#hex').val();
       var result = "rgb("+hexToRgb(value).r+", "+hexToRgb(value).g+", "+hexToRgb(value).b+")";
       $('html, body').css('background', result);
       $('#result').val(result);
-  }(jQuery));
+    }(jQuery));
 
-  $('#hex').keyup(function(){
+    $('#hex').keyup(function(){
       var value = $(this).val();
       var result = "rgb("+hexToRgb(value).r+", "+hexToRgb(value).g+", "+hexToRgb(value).b+")";
       $('html, body').css('background', result);
       $('#result').val(result);
-  });
+    });
 
- $('#result').keyup(function(){
+    $('#result').keyup(function(){
       var rgb_value = $(this).val();
       $('#hex').val(rgbToHex(rgb_value));
       $('html, body').css('background', rgb_value);
-  });
-  </script>
-  <script src="../retour.js"></script>
-</body>
+    });
+    </script>
+    <script src="../retour.js"></script>
+  </body>
 </html>

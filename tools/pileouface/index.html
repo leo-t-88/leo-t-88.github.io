@@ -1,80 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Pile ou face | Léo.t88</title>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+      <title>Heads or tails | Léo.t88</title>
+      <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="../retour.css">
+      <link rel="icon" type="image/png" href="../../assets/favicon.png">
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../retour.css">
-    <link rel="icon" type="image/png" href="../../favicon.png"/>
-
+  <body>
     <div id="start"></div>
-  <div id="logobox" onclick="retour();" title="Retour à la page d'Accueil">
-    <img src="../../logo.png" id="logo1">
-  </div>
-</head>
-
-<body>
+    <div id="logobox" onclick="retour();" title="Back to home page">
+      <img src="../../assets/favicon.png" id="logo1" alt="website logo">
+    </div>
     <div class="pfgen">
-        <div class="content"></div>
-        <h1>Pile ou face</h1>
-        <nav class="theme-switch-wrapper">
-          <em>Thème :</em>
-            <label for="themecheck" class="theme-switch">
-              <input type="checkbox" id="themecheck"/>
-              <div class="slider round"></div>
-            </label>
-        </nav>
-        <img src="./pfmystère.png" id="pfimg">
-        <select id="devise">
-          <option value="">Select Coin Type...</option>
-          <option value="euro">EURO (Fr) 1€</option>
-          <option value="us">USD (US) $1 - George Washington</option>
-          <option value="yen">YEN (JP) ¥500</option>
-          <option value="livre">GBP (UK) £1</option>
-        </select>
-        <button onclick="pfgen()">Générer</button>
-        <u><strong><p>Résultat :</p></strong></u>
-        <p id="resultpf">???</p>
-        </div>
+      <div class="content"></div>
+      <h1>Heads or tails</h1>
+      <img src="./pfmystère.png" id="pfimg" alt="mystery coin">
+      <select id="devise">
+        <option value="euro">EURO (Fr) 1€</option>
+        <option value="us">USD (US) $1 - George Washington</option>
+        <option value="yen">YEN (JP) ¥500</option>
+        <option value="livre">GBP (UK) £1</option>
+      </select>
+      <button onclick="pfgen()">Generate</button>
+      <p><strong>Result :</strong></p>
+      <p id="resultpf">???</p>
     </div>
 
-<script src="../../main.js"></script>
-<script src="../retour.js"></script>
-<script>
-var pile = "";
-var face = "";
-var devise = document.getElementById("devise").value;
+    <script src="../retour.js"></script>
+    <script>
+    var pile = "./europile.png", face = "./euroface.png";
+    var devise = document.getElementById("devise").value;
 
-function pfgen(){
-  devise = document.getElementById("devise").value;
-  if(devise === "euro"){
-    pile = "./europile.png";
-    face = "./euroface.png";
-  }else if(devise === "us"){
-    pile = "./uspile.png";
-    face = "./usface.png";
-  }else if(devise === "yen"){
-    pile = "./yenpile.png";
-    face = "./yenface.png";
-  }else if(devise === "livre"){
-    pile = "./livrepile.png";
-    face = "./livreface.png";
-  }
+    function pfgen(){
+      devise = document.getElementById("devise").value;
+      
+      if(devise === "us"){
+        pile = "./uspile.png";
+        face = "./usface.png";
+      }else if(devise === "yen"){
+        pile = "./yenpile.png";
+        face = "./yenface.png";
+      }else if(devise === "livre"){
+        pile = "./livrepile.png";
+        face = "./livreface.png";
+      }
 
-  if(devise === ""){
-    alert("Please select a coin type");
-  }else{
-    var pf = Math.floor(Math.random() * 2) + 1;
-    if(pf == 1){
-      document.getElementById("resultpf").innerHTML = "Pile";
-      document.getElementById("pfimg").src = pile;
-    } else if(pf == 2){
-      document.getElementById("resultpf").innerHTML = "Face";
-      document.getElementById("pfimg").src = face;
-  }
-  }
-}
-</script>
-</body>
+      var pf = Math.floor(Math.random() * 2) + 1;
+      if(pf == 1){
+        document.getElementById("resultpf").innerHTML = "Heads";
+        document.getElementById("pfimg").src = pile;
+      } else if(pf == 2){
+        document.getElementById("resultpf").innerHTML = "Tails";
+        document.getElementById("pfimg").src = face;
+      }
+    }
+    </script>
+  </body>
+</html>

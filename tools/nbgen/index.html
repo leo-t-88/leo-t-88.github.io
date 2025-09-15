@@ -1,63 +1,53 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Random Number | Léo.t88</title>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+      <title>Random Number | Léo.t88</title>
+      <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="../retour.css">
+      <link rel="icon" type="image/png" href="../../assets/favicon.png">
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../retour.css">
-    <link rel="icon" type="image/png" href="../../favicon.png"/>
-
-  <div id="start"></div>
-  <div id="logobox" onclick="retour();" title="Retour à la page d'Accueil">
-    <img src="../../logo.png" id="logo1">
-  </div>
-</head>
-
-<body>
-    <div class="nbgen">
-        <h1>Générateur de nombre aléatoire</h1>
-        <nav class="theme-switch-wrapper">
-          <em>Thème :</em>
-            <label for="themecheck" class="theme-switch">
-              <input type="checkbox" id="themecheck"/>
-              <div class="slider round"></div>
-            </label>
-        </nav>
-        <p style="margin-top: 60px;">Générer <span id="length"></span> nombre(s)</p>
-        <input type="range" min="1" max="100" value="1" class="sliderbar" id="myRange">
-        <p>Minimum : </p><input type="number" id="min" value="1">
-        <p>Maximum : </p><input type="number" id="max" value="10">
-        <button onclick="generate()">Générer</button>
-        <u><strong><p>Résultat :</p></strong></u>
-        <p id="result">???</p>
+  <body>
+    <div id="start"></div>
+    <div id="logobox" onclick="retour();" title="Back to home page">
+      <img src="../../assets/favicon.png" id="logo1" alt="website logo">
     </div>
-<script>
-  function generate(){
-  let gen = "";
-    let quantite = parseInt(document.getElementById("myRange").value);
-    let min = parseInt(document.getElementById("min").value);    
-    let max = parseInt(document.getElementById("max").value) + 1;
-    
-    if(quantite === 1){
-      document.getElementById("result").style.fontSize = "40px";
-    }else{
-      document.getElementById("result").style.fontSize = "20px";
+    <div class="nbgen">
+      <h1>Random numbers generator</h1>
+      <p style="margin-top: 60px;">Generate <span id="length"></span> number(s)</p>
+      <input type="range" min="1" max="100" value="1" class="sliderbar" id="myRange">
+      <p>Minimum : </p><input type="number" id="min" value="1">
+      <p>Maximum : </p><input type="number" id="max" value="10">
+      <button onclick="generate()">Generate</button>
+      <p><strong>Result :</strong></p>
+      <p id="result">???</p>
+    </div>
+    <script>
+    function generate(){
+      let gen = "";
+        let quantite = parseInt(document.getElementById("myRange").value);
+        let min = parseInt(document.getElementById("min").value);    
+        let max = parseInt(document.getElementById("max").value) + 1;
+        
+        if(quantite === 1){
+          document.getElementById("result").style.fontSize = "40px";
+        }else{
+          document.getElementById("result").style.fontSize = "20px";
+        }
+        
+        for (let i = 1; i <= quantite; i++){
+          gen = gen + Math.floor(Math.random() * (max - min) + min) + " ";
+      }
+      document.getElementById("result").innerHTML = gen;
     }
-    
-    for (let i = 1; i <= quantite; i++){
-      gen = gen + Math.floor(Math.random() * (max - min) + min) + " ";
-  }
-  document.getElementById("result").innerHTML = gen;
-}
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("length");
-var strength = document.getElementById("strength");
-output.innerHTML = slider.value;
-slider.oninput = function() {output.innerHTML = this.value;}
-</script>
- <script src="../retour.js"></script>
- <script src="../../main.js"></script>
-</body>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("length");
+    var strength = document.getElementById("strength");
+    output.innerHTML = slider.value;
+    slider.oninput = function() {output.innerHTML = this.value;}
+    </script>
+    <script src="../retour.js"></script>
+  </body>
+</html>

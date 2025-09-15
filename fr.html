@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Léo.t88</title>
+        <meta name="description" content="Portfolio de Léo.t88">
+        <meta name="keywords" content="léo, léo.t88, leo, leo.t88, leot88, site, website, personnal, portfolio">
+        <meta name="title" content="Léo.t88">
+        <meta property="og:title" content="Léo.t88">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://leo-t88.github.io">
+        <meta property="og:image" content="https://leo-t88.github.io/favicon.png">
+        <meta property="og:description" content="Portfolio de Léo.t88">
+        <link rel="preload" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css" as="style">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <noscript>
+            <style>
+                body{overflow: visible;}
+                #startanimation{display:none;}
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <!-- Fixed elements -->
+        <div class="background">
+            <div class="night">
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+            </div>
+        </div>
+        <div id="startanimation">
+            <img src="assets/favicon.png" alt="Website logo">
+        </div>
+        <div class="lang">
+            <a href="./"><p>EN</p></a>
+        </div>
+        <div class="theme">
+            <label for="themecheck">
+                <input type="checkbox" id="themecheck">
+                <i class="fa-solid fa-sun-bright"></i>
+                <i class="fa-solid fa-moon"></i>
+            </label>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="line1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                    <path class="line2" d="M0 50h70" />
+                    <path class="line3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+                </svg>
+            </label>
+            <div class="menu-content">
+                <a href="#"><h2>Accueil</h2></a>
+                <a href="link"><h2>LinkTree</h2></a>
+                <a href="sitemap"><h2>SiteMap</h2></a>
+            </div>
+        </div>
+
+        <div class="taskbar">
+            <a href="#intro" class="smooth-scroll"><img src="assets/favicon.png" alt="Website logo" id="favtask"></a>
+            <a href="#p1" class="smooth-scroll"><img src="assets/customkey.png" alt="CustomKey logo"></a>
+            <a href="#p2" class="smooth-scroll"><img src="assets/tune-radio.png" alt="Japanese flag"></a>
+            <a href="#ap" class="smooth-scroll"><i class="fa-solid fa-grid-2-plus"></i></a>
+        </div>
+
+        <!-- Blank space for making animation for script version working -->
+        <div class="blankspace">
+            <div id="introbs"></div>
+            <div id="p1bs"></div>
+            <div id="p2bs"></div>
+            <div id="apbs"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="window">
+            <div class="winicon">
+                <img src="assets/minimize.png" alt="minimize window button">
+                <img src="assets/maxmin.png"  alt="maximize window button">
+                <img src="assets/close.png"  alt="close window button">
+            </div>
+            <div class="content">
+                <section id="intro">
+                    <h1>Léo</h1>
+                    <div class="social">
+                        <a href="https://www.instagram.com/leo.t88/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/users/596300572294905857" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://open.spotify.com/user/31iqrg4uw6tmojoishamsnkcdzee" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="https://github.com/leo-t-88" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/leo-t88/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <h2>Hey, je suis Léo, un étudiant en informatique français.</h2>
+                    <div class="skills">
+                        <div>
+                            <div>
+                                <p class="mt">HTML</p><div class="meter html"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">CSS</p><div class="meter css"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">JavaScript</p><div class="meter js"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">C#</p><div class="meter cs"><span></span></div>
+                            </div>
+                            <div>
+                                <p class="mt">Java</p><div class="meter java"><span></span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="progressc">
+                                <svg class="progressbarc"><circle cx="80" cy="80" r="70" class="progressbar-circle acfr"></circle></svg>
+                                <span class="progressbar-text"><img src="https://d35aaqx5ub95lt.cloudfront.net/images/borderlessFlags/7488bd7cd28b768ec2469847a5bc831e.svg" alt="french flag" height="30"><br>Natif</span>
+                            </div>
+                            <div class="progressc">
+                                <svg class="progressbarc"><circle cx="80" cy="80" r="70" class="progressbar-circle acen"></circle></svg>
+                                <span class="progressbar-text"><img src="https://d35aaqx5ub95lt.cloudfront.net/images/borderlessFlags/b9817d83179e278c91771d903953bfc6.svg" alt="american flag" height="30"><br>B2</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+                    <path fill="rgb(193, 178, 150)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" transform="scale(-1, -1) translate(-1440, -200)" />
+                </svg> 
+                <section id="p1">
+                    <h2 class="reveal">CustomKey</h2>
+                    <div class="reveal">
+                        <div>
+                            <img src="assets/ckcapture.webp" alt="CustomKey screenshot" class="projcapture">
+                        </div>
+                        <div>
+                            <h3>CustomKey est un clavier personnalisable, écrit en C# pour Windows, macOS et Linux. Vous pouvez choisir une disposition et saisir du texte dans l'application de votre choix.</h3>
+                            <a href="https://github.com/leo-t-88/customkey" target="_blank"><h3 class="proj5">Voir le projet <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                        </div>
+                    </div>
+                </section>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+                    <path fill="rgb(193, 178, 150)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+                </svg>
+                <section id="p2">
+                    <h2 class="reveal">Tune Radio</h2>
+                    <div class="reveal">
+                        <div>
+                            <h3>Tune Radio est une application web d'une seule page permettant d'écouter en streaming les stations de radio nationales et régionales françaises. Elle propose également cinq playlists classées par genre musical pour découvrir de nouveaux morceaux.</h3>
+                            <a href="https://leo-t-88.github.io/tune-radio/" target="_blank"><h3 class="proj5">Voir le projet <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                        </div>
+                        <div>
+                            <img src="assets/trcapture.webp" alt="Tune Radio screenshot" class="projcapture">
+                        </div>
+                    </div>
+                </section>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+                    <path fill="rgb(79, 108, 135)" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,122.7C640,128,800,160,960,154.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" transform="scale(-1, -1) translate(-1440, -200)" />
+                </svg> 
+                <section id="ap">
+                    <h2 class="reveal">Autres projets</h2>
+                    <div class="reveal">
+                        <div>
+                            <img src="assets/japkey.webp" alt="screenshot" id="projImg" class="projcapture">
+                        </div>
+                        <div class="otherproj">
+                            <a href="https://github.com/leo-t-88/japanese-keyboard" target="_blank" id="proj1"><h3><i class="fa-solid fa-arrow-right"></i> Clavier Japonnais</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/color-picker/" target="_blank" id="proj2"><h3><i class="fa-solid fa-arrow-right"></i> Color Picker</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/color-generator/" target="_blank" id="proj3"><h3><i class="fa-solid fa-arrow-right"></i> Générateur de couleur</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/pileouface/" target="_blank" id="proj4"><h3><i class="fa-solid fa-arrow-right"></i> Pile ou face</h3></a>
+                            <a href="https://leo-t-88.github.io/tools/nbgen/" target="_blank" id="proj5"><h3><i class="fa-solid fa-arrow-right"></i> Nombres aléatoire</h3></a>
+                        </div>
+                    </div>
+                    <h3 id="copyright">Copyright ©Léo.t88</h3>
+                </section>
+            </div>
+        </div>
+        <script src="js/script.js" defer></script>
+    </body>
+</html>
