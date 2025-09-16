@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sitemap | Léo.t88</title>
+        <link rel="preload" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css" as="style">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <style>
+            .maplink {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100vh;
+                width: 100vw;
+            }
+            #sitemap-list > li{
+                font-size: 1.2rem;
+                text-align: left;
+            }
+            #sitemap-list > li:hover {
+                text-decoration: underline;
+                color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Fixed elements -->
+        <div class="background">
+            <div class="night">
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+                <div class="shooting_star"></div>
+            </div>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="line1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                    <path class="line2" d="M0 50h70" />
+                    <path class="line3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+                </svg>
+            </label>
+            <div class="menu-content">
+                <a href="./"><h2>Home</h2></a>
+                <a href="link"><h2>LinkTree</h2></a>
+                <a href="#"><h2>SiteMap</h2></a>
+            </div>
+        </div>
+
+        <div class="maplink">
+            <h2>Sitemap</h2>
+            <ul id="sitemap-list"></ul>
+        </div>
+        <script>
+        fetch("sitemap.txt")
+            .then(r => r.text())
+            .then(text => {
+                const list = document.getElementById("sitemap-list");
+                text.split("\n").forEach(url => {
+                url = url.trim();
+                if (url) {
+                    list.innerHTML += `<li><a href="${url}">${url}</a></li>`;
+                }
+                });
+            });
+        </script>
+    </body>
+</html>

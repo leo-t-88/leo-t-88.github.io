@@ -26,7 +26,7 @@ body {
 
 a{text-decoration: none; color: inherit;}
 p {margin: 5px 0 2px;}
-h2, h3{font-variation-settings: "wght" 800, "wdth" 120; margin: 10px 5px 15px; transition: .2s ease-out;}
+h2, h3{font-variation-settings: "wght" 800, "wdth" 120; margin: 10px; transition: .2s ease-out;}
 h2:hover{font-variation-settings: "wght" 800, "wdth" 100;}
 h2{text-transform: uppercase; font-size: 3rem;}
 h3{font-size: 1.5rem; padding: 1px;}
@@ -211,7 +211,7 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
 #intro h1:hover {color: inherit;}
 #intro h2 {font-size: 1.5rem;}
 
-.social {font-size: 2rem;}
+.social {font-size: 1.8rem;}
 .social i:hover{transform: scale(1.2);}
 
 .skills {
@@ -245,8 +245,8 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
 
 .progressc{
     display: inline-block;
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     transform: rotate(-90deg);
 }
 .progressbarc{
@@ -260,7 +260,7 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     stroke-linecap: round;
-    transform: translate(5px, 5px);
+    transform: translate(2px, 1px);
 }
 .progressbar-circle.acfr{stroke: #0055A4; --stroke: 0; animation: languages 1s ease-out forwards;}
 .progressbar-circle.acen{stroke: #d74545; --stroke: 147; animation: languages 1s ease-out forwards;}
@@ -269,9 +269,7 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 10px;
     color: var(--txt-color);
-    border-radius: 0.25em;
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
