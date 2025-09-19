@@ -216,7 +216,7 @@ function reveal() {
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top + 100;
+    var elementTop = reveals[i].getBoundingClientRect().top;
 
     if (elementTop < windowHeight) {
       reveals[i].classList.remove("notshow");

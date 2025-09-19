@@ -38,7 +38,7 @@ section, #startanimation, .taskbar, .menu-content{display: flex; justify-content
 
 /*Reveal effect*/
 .reveal.notshow{
-    transform: translateY(125px);
+    transform: translateY(175px);
 }
 .reveal{
     transform: translateY(0);
