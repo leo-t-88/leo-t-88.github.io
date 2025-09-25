@@ -159,7 +159,6 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
     border-radius: 10px;
     transition: .4s ease-out;
 }
-
 .winicon{
     display: none;
     position: absolute;
@@ -203,13 +202,13 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
 */
 #intro h1 {
     margin: -7px;
-    font-size: 7rem;
+    font-size: 7.5rem;
     -webkit-text-stroke: 2px var(--txt-color);
     color: transparent;
 }
 
 #intro h1:hover {color: inherit;}
-#intro h2 {font-size: 1.5rem;}
+#intro > h2 {font-size: 1.5rem;}
 
 .social {font-size: 1.8rem;}
 .social i:hover{transform: scale(1.2);}
@@ -222,26 +221,32 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
 }
 
 .meter {
-    height: 10px;
+    height: 13px;
     width: 320px;
     background: #ffffff49;
+    margin: 10px;
     border-radius: 25px;
 }
 .meter > span {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 0%;
+    font-weight: bold;
+    font-size: 14px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
     transition: width 1s ease-out;
 }
-.mt{text-align: left;}
-.html > span{background-color: #e34c26; width: 98%;}
-.css > span{background-color: #7b58b0; width: 90%;}
-.js > span{background-color: #f1e05a; width: 60%;}
-.cs > span{background-color: #178600; width: 55%;}
-.java > span{background-color: #b07219; width: 45%;}
+.htss > span { background-image: linear-gradient(45deg, #e34c26 15%, #7b58b0 90%); width: 90%; }
+.cs > span { background-color: #178600; width: 65%; }
+.java > span { background-color: #b07219; width: 62%; }
+.js > span { background-color: #f1e05a; width: 62%; }
+.sql > span { background-color: #e38c00; width: 55%; }
+.php > span { background-color: #4f5d95; width: 45%; }
+.cpp > span { background-color: #f34b7d; width: 40%; }
 
 .progressc{
     display: inline-block;
@@ -337,11 +342,10 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
     right: 0;
     height: 2px;
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
-    transform: translateX(50%) rotateZ(45deg);
     border-radius: 100%;
     animation: shining 5s ease-in-out infinite;
 }
-
+.shooting_star::before {transform: translateX(50%) rotateZ(45deg);}
 .shooting_star::after {transform: translateX(50%) rotateZ(-45deg);}
 
 .night .shooting_star:nth-child(1) {top: 20%; left: 5%; animation-delay: 500ms;}

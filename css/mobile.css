@@ -3,6 +3,7 @@
     #intro > h2 {font-size: 1rem;}
     .taskbar{width: 90%; padding: 0;}
     #p1 > div, #p2 > div, #ap > div {flex-direction: column;}
+    #intro h1{font-size: 6rem;}
     h2{font-size: 2rem;}
     h3{font-size: 1rem; }
     .otherproj > a{text-align: center; transform: translateX(0px);}

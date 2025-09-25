@@ -1,32 +1,34 @@
 // Launch Animation
-const meterClasses = ["html", "css", "js", "cs", "java"];
+const meterClasses = ["htss", "js", "php", "cs", "java", "cpp", "sql"];
 const meters = document.querySelectorAll(".meter");
 const circles = document.querySelectorAll(".progressbar-circle");
 const startAnim = document.getElementById("startanimation");
 const startImg = document.querySelector("#startanimation > img");
 const favtask = document.getElementById("favtask");
-const windowElem = document.querySelector(".window");
-const winiconElem = document.querySelector(".winicon");
-const contentElem = document.querySelector(".content");
-const introElem = document.getElementById("intro");
-const p1Elem = document.getElementById("p1");
-const p2Elem = document.getElementById("p2");
-const apElem = document.getElementById("ap");
-let ticking = false;
+const elems = {
+  window: document.querySelector(".window"),
+  content: document.querySelector(".content"),
+  intro: document.getElementById("intro"),
+  p1: document.getElementById("p1"),
+  p2: document.getElementById("p2"),
+  ap: document.getElementById("ap"),
+  icon: document.querySelector(".winicon")
+};
 
+let ticking = false;
 meters.forEach((el, index) => {
   meterClasses.forEach(cls => el.classList.remove(cls));
 });
-
 circles[0].classList.remove("acfr");
 circles[1].classList.remove("acen");
 
 // Desktop version
 if(window.matchMedia('(min-width: 768px)').matches){
-  windowElem.style.position = "fixed";
-  p1Elem.style.display = "none";
-  p2Elem.style.display = "none";
-  apElem.style.display = "none";
+  setStyles(elems.window, { position : "fixed" });
+  setStyles(elems.p1, { display : "none" });
+  setStyles(elems.p2, { display : "none" });
+  setStyles(elems.ap, { display : "none" });
+  setStyles(elems.content, { overflowY : "hidden" });
   document.querySelector(".blankspace").style.display = "block";
   document.querySelectorAll(".content > svg").forEach(svg => {svg.style.display = "none";});
   document.querySelectorAll(".taskbar a").forEach((link, i) => link.href = `#${['introbs', 'p1bs', 'p2bs', 'apbs'][i]}`);
@@ -82,45 +84,42 @@ function setStyles(el, styles) {
   for (const prop in styles) el.style[prop] = styles[prop];
 }
 
-const elems = {window: windowElem, content: contentElem, intro: introElem, p1: p1Elem, p2: p2Elem, ap: apElem, icon: winiconElem};
-
 const styleMap = {
   intro: {
     window: { width: "100%", height: "100%", backgroundColor: "transparent", backdropFilter: "blur(0px)", bottom: "50%" },
-    content: { display: "block", height: "100%", width: "100%" },
-    intro: { display: "flex", backgroundColor: "transparent" },
-    p1: { display: "none" }, p2: { display: "none" }, ap: { display: "none" }, icon: { display: "none" }
+    content: { height: "100%", width: "100%" },
+    intro: { display: "flex" }, p1: { display: "none" }, p2: { display: "none" }, ap: { display: "none" }, icon: { display: "none" }
   },
   hidden: {
-    window: { width: "0%", height: "0%", bottom: "0%" },
-    content: { display: "none" }
+    window: { width: "0%", height: "0%", bottom: "0%" }
   },
   p1: {
     window: { width: "80%", height: "80%", bottom: "50%", backgroundColor: "var(--ui-color)" },
-    content: { width: "calc(100% - 20px)", height: "calc(100% - 55px)", display: "block" },
+    content: { width: "calc(100% - 20px)", height: "calc(100% - 55px)" },
     intro: { display: "none" }, p1: { display: "flex" }, p2: { display: "none" }, ap: { display: "none" }, icon: { display: "inline" }
   },
   p2: {
     window: { width: "80%", height: "80%", bottom: "50%", backgroundColor: "var(--ui-color)", backdropFilter: "blur(10px)" },
-    content: { width: "calc(100% - 20px)", height: "calc(100% - 55px)", display: "block" },
+    content: { width: "calc(100% - 20px)", height: "calc(100% - 55px)" },
     intro: { display: "none" }, p1: { display: "none" }, p2: { display: "flex" }, ap: { display: "none" }, icon: { display: "inline" }
   },
   ap: {
     window: { width: "100%", height: "100%", backgroundColor: "rgb(79, 108, 135)", backdropFilter: "blur(0px)", bottom: "50%" },
-    content: { display: "block", height: "100%", width: "100%" },
+    content: { height: "100%", width: "100%" },
     intro: { display: "none" }, p1: { display: "none" }, p2: { display: "none" }, ap: { display: "flex" }, icon: { display: "none" }
   }
 };
 
 let lastState = null;
+const sectionElems = [
+  document.getElementById("introbs"),
+  document.getElementById("p1bs"),
+  document.getElementById("p2bs"),
+  document.getElementById("apbs")
+];
 
 function winanim() {
-  const tops = [
-    document.getElementById("introbs").getBoundingClientRect().top,
-    document.getElementById("p1bs").getBoundingClientRect().top,
-    document.getElementById("p2bs").getBoundingClientRect().top,
-    document.getElementById("apbs").getBoundingClientRect().top
-  ];
+  const tops = sectionElems.map(el => el.getBoundingClientRect().top);
 
   let state =
     tops[0] > -80 ? "intro" :
@@ -132,7 +131,6 @@ function winanim() {
 
   if (state === lastState) return;
   lastState = state;
-
   // Apply styles
   const styles = styleMap[state];
   for (const key in styles) {
