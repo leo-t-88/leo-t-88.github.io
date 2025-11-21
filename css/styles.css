@@ -242,11 +242,11 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
 }
 .htss > span { background-image: linear-gradient(45deg, #e34c26 15%, #7b58b0 90%); width: 90%; }
 .cs > span { background-color: #178600; width: 65%; }
-.java > span { background-color: #b07219; width: 62%; }
-.js > span { background-color: #f1e05a; width: 62%; }
+.java > span { background-color: #b07219; width: 60%; }
+.js > span { background-color: #f1e05a; width: 60%; }
 .sql > span { background-color: #e38c00; width: 55%; }
-.php > span { background-color: #4f5d95; width: 45%; }
-.cpp > span { background-color: #f34b7d; width: 40%; }
+.php > span { background-color: #4f5d95; width: 60%; }
+.cpp > span { background-color: #f34b7d; width: 30%; }
 
 .progressc{
     display: inline-block;
