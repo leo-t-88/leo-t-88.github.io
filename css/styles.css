@@ -3,7 +3,7 @@ Global CSS Styles
 */
 @font-face {
     font-family: 'StudioFeixenSans';
-    src: url('../assets/studio-feixen-sans-variable.ttf');
+    src: url('webfonts/studio-feixen-sans-variable.ttf');
 }
 
 /*Theme*/

@@ -1,4 +1,4 @@
 # Léo.t88
 (EN) Léo.t88's portfolio - (FR) Porfolio de Léo.t88
 
-``Version 3.0.2``
+``Version 3.1.0``
