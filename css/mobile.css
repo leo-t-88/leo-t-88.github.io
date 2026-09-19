@@ -1,4 +1,6 @@
 @media screen and (max-width: 768px) {
+    .shooting_star {animation: tail 4s ease-in-out infinite, shooting 4s ease-in-out infinite;}
+    .shooting_star::before, .shooting_star::after {animation: shining 4s ease-in-out infinite;}
     .skills {flex-direction: column; gap: 10px;}
     #intro > h2 {font-size: 1rem;}
     .taskbar{width: 90%; padding: 0;}
