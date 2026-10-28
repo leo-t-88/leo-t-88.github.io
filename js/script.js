@@ -128,7 +128,7 @@ const styleMap = {
 let lastState = null;
 const sectionElems = [
   document.getElementById("introbs"),
-  document.getElementById("p1bs"),
+  document.getElementById("p1bs"), 
   document.getElementById("p2bs"),
   document.getElementById("apbs")
 ];

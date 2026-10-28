@@ -223,12 +223,12 @@ input[type="checkbox"]:checked ~ .fa-moon {display: none;}
     overflow: hidden;
     animation: progress 1.2s ease-out forwards;
 }
-.htss > span { background-image: linear-gradient(135deg, #e34c26 15%, #7b58b0 90%); --target-width: 90%; }
+.htss > span { background-image: linear-gradient(135deg, #e34c26 15%, #c6538c 85%); --target-width: 90%; }
 .jts > span { background-image: linear-gradient(135deg, #f1e05a 40%, #3178c6 50%); --target-width: 70%; }
 .php > span { background-color: #4f5d95; --target-width: 70%; }
-.cs > span { background-color: #178600; --target-width: 65%; }
-.cpp > span { background-color: #f34b7d; --target-width: 15%; }
+.cs > span { background-color: #7355dd; --target-width: 65%; }
 .sql > span { background-color: #e38c00; --target-width: 55%; }
+.rust > span { background-color: #dea584; --target-width: 15%; }
 
 .progressc{
     display: inline-block;

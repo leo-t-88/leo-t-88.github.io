@@ -40,7 +40,7 @@
             <img src="assets/favicon.png" alt="Website logo">
         </div>
         <div class="lang">
-            <a href="./fr"><p>FR</p></a>
+            <a href="./fr" onclick="localStorage.setItem('preferred_lang', 'fr');"><p>FR</p></a>
         </div>
         <div class="theme">
             <label for="themecheck">
@@ -92,12 +92,12 @@
                     <h2>Hey, I'm Léo, a french computer science student</h2>
                     <div class="skills">
                         <div>
-                            <div class="meter htss"><span>HTML & CSS</span></div> <!-- Advanced -->
-                            <div class="meter jts"><span>JavaScript & TypeScript</span></div> <!-- Intermediate + -->
+                            <div class="meter htss"><span>HTML & CSS/SCSS</span></div> <!-- Advanced -->
+                            <div class="meter jts"><span>JavaScript/TypeScript</span></div> <!-- Intermediate + -->
                             <div class="meter php"><span>PHP</span></div> <!-- Intermediate + -->
                             <div class="meter cs"><span>C#</span></div> <!-- Intermediate -->
-                            <div class="meter cpp"><span>C++</span></div> <!-- Beginner -->
                             <div class="meter sql"><span>SQL</span></div> <!-- Intermediate -->
+                            <div class="meter rust"><span>Rust</span></div> <!-- Beginner -->
                         </div>
                         <div>
                             <div class="progressc">
@@ -170,6 +170,11 @@
             <a href="#ap" class="smooth-scroll"><i class="fa-solid fa-grid-2-plus"></i></a>
         </div>
 
+        <script>
+            const lang = localStorage.getItem("preferred_lang") || (navigator.language.toLowerCase().startsWith("fr") ? "fr" : "en");
+            localStorage.setItem("preferred_lang", lang);
+            if (lang === "fr") location.href = "./fr";
+        </script>
         <script src="js/script.js" defer></script>
     </body>
 </html>
